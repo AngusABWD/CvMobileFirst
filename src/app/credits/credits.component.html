@@ -1,0 +1,13 @@
+<!--Carte de crédits ( ha ha )-->
+<button id="credits" class="card-button mt-5" (click)="onCredits()" [ngClass]="{'rotateIn': rotateCredits === false, 'rotateOut': rotateCredits === true, 'mirror': rotateCredits === undefined }" >
+    <div class="card h-card bg-blue-light  card-border" [ngClass]="{'bg-black': CreditsMenu === true}">
+        <img src="/assets/aceOfSpade.png" alt="As de Pique Credits " class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': CreditsMenu === true || Credits === false}" >
+        <img src="/assets/aceOfSpade.png" alt="As de Pique Credits " class="card-img h-100 w-100 " [ngClass]="{'d-none': CreditsMenu === true || Credits === true}" >
+        <div class="card-img-overlay text-center">
+        <h5 class="card-title text-white m-0 mirror" *ngIf="CreditsMenu === false" [ngClass]="{'d-none': Credits === false}"><p class="creditsP">Crédits </p></h5>
+        <h5 class="card-title text-white m-0" *ngIf="CreditsMenu === false" [ngClass]="{'d-none': Credits === true}"><p class="creditsP">Crédits </p></h5>
+        <div class="card-text text-start text-light mb-0 pb-0  mirror" *ngIf="CreditsMenu === true" [ngClass]="{'d-none': Credits === true}"><p class="text-center fs-7">Le type qui a inventé le jeu de cartes<br><br>Dieu pour la couleur bleu<br>( sans laquelle ce site serait moche )<br><br>Le diable pour le Rock'n Roll et le noir<br>( qui parait-il n'éxiste pas dans la nature mais je ne suis pas d'accord )<br><br>Lemmy Kilmister qui a rendu les deux "Badass"<br>OÜI FM pour sa photo (RIP)<br><br>Cette carte est un dispositif médical,qui atteste que si vous avez pu la lire, soit vous avez de bons yeux, soit vous avez un gros cerveaux et vous avez zoomé</p></div>
+        <div class="card-text text-start text-light mb-0 pb-0" *ngIf="CreditsMenu === true" [ngClass]="{'d-none': Credits === false}"><p class="text-center fs-7">Le type qui a inventé le jeu de cartes<br><br>Dieu pour la couleur bleu<br>( sans laquelle ce site serait moche )<br><br>Le diable pour le Rock'n Roll et le noir<br>( qui parait-il n'éxiste pas dans la nature mais je ne suis pas d'accord )<br><br>Lemmy Kilmister qui a rendu les deux "Badass"<br>OÜI FM pour sa photo (RIP)<br><br>Cette carte est un dispositif médical,qui atteste que si vous avez pu la lire, soit vous avez de bons yeux, soit vous avez un gros cerveaux et vous avez zoomé</p></div>
+        </div>
+    </div>
+</button>

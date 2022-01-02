@@ -1,0 +1,56 @@
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logoMenu {
+    width: 100%;
+}
+.brandWidth {
+    width: 60px !important;
+}
+.bg-blue-light {
+    background-color: #DFF2FF;
+}
+.blue-light {
+    color: #DFF2FF;
+}
+.bg-blue-dark {
+    background-color: #4169E1;
+}
+.blue-dark {
+    color: #4169E1;
+    border: none;
+}
+.imageMenu {
+    background-color:#6495ED;
+    border: none;
+}
+.logoCarte {
+    width: 25px;
+    height: auto;
+    background-color:#6495ED;
+    border-radius: 50%;
+}
+.nav-item {
+    border-top: #6495ED solid 1px;
+    @media screen and ( max-width: 992px ) {
+    border-top: #6495ED solid 1px;
+    }
+}
+.pcredits {
+    padding-left: 10%;
+    margin-top: 5%;
+}
+.fade {
+	animation: fadeIn 2s;
+	opacity: 1;
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}	
+}

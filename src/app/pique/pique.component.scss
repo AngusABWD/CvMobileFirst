@@ -1,0 +1,113 @@
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bg-blue-light {
+    background-color: #DFF2FF;
+}
+.blue-light {
+    color: #DFF2FF;
+}
+.bg-blue-dark {
+    background-color: #4169E1;
+}
+.blue-dark {
+    color: #4169E1;
+}
+.h-card {
+    height: 300px;
+	@media screen and (min-width: 992px) { 
+		&:hover {
+			transform: scale(1.05);
+			transition-duration: 300ms;
+			box-shadow: black -10px 10px 10px;
+		}
+	}
+}
+.card-border {
+    border:#DFF2FF 10px solid ;
+    border-radius: 20px;
+}
+.card-button {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #6495ED;
+    border: none;
+    box-shadow: black -6px 6px 6px;
+    border-radius: 20px;
+}
+@keyframes rotationIn {
+	from {
+		transform: rotateY(0deg);
+		transform-style: preserve-3d;
+		transform-origin: center  0px;
+		animation-timing-function: ease-in-out;
+		box-shadow: none;
+	}
+	to {
+		transform: rotateY(180deg);
+		transform-style: preserve-3d;
+		transform-origin: center  0px;
+		animation-timing-function: ease-in-out;
+	}
+	
+}
+
+@keyframes rotationOut {
+	from {
+		transform: rotateY(0deg);
+		transform-style: preserve-3d;
+		transform-origin: center center 0px;
+		animation-timing-function: ease-in-out;
+	    box-shadow: none;
+	}
+	to {
+		transform: rotateY(-180deg);
+		transform-style: preserve-3d;
+		transform-origin: center center 0px;
+		animation-timing-function: ease-in-out;
+	}
+	
+}
+@keyframes rotationIn {
+	from {
+		transform: rotateY(0deg);
+		transform-style: preserve-3d;
+		transform-origin: center  0px;
+		animation-timing-function: ease-in-out;
+		box-shadow: none;
+	}
+	to {
+		transform: rotateY(180deg);
+		transform-style: preserve-3d;
+		transform-origin: center  0px;
+		animation-timing-function: ease-in-out;
+	}
+	
+}
+.rotateIn {
+    animation: rotationIn 1000ms ease-in-out;
+	transform: scaleX(-1);
+	
+}
+.rotateOut {
+    animation: rotationOut 1000ms ease-in-out;
+	transform: scaleX(-1);
+
+}
+.rotateStart {
+    animation: rotationIn 1000ms ease-in-out;
+	transform: scaleX(-1);
+	
+}
+.mirror {
+	transform: scaleX(-1);
+}
+.fs-7 {
+	font-size: smaller;
+}
+a {
+    color: aquamarine;
+}

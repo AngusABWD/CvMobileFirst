@@ -1,0 +1,65 @@
+<!--Carte et table des matières du Menu "savoir"-->
+<button id="Pique" class="card-button m-3" (click)="onSavoir()" [ngClass]="{'rotateIn': rotateSavoir === false, 'rotateOut': rotateSavoir === true, 'mirror': rotateSavoir === undefined }" >
+    <div class="card h-card bg-blue-light  card-border" [ngClass]="{'bg-blue-dark': savoirMenu === true}">
+        <img src="/assets/asPique.png" alt="As de Pique savoir " class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': savoirMenu === true || savoir === false}" >
+        <img src="/assets/asPique.png" alt="As de Pique savoir " class="card-img h-100 w-100 " [ngClass]="{'d-none': savoirMenu === true || savoir === true}" >
+        <div class="card-img-overlay center">
+        <h5 class="card-title text-black m-0 mirror" *ngIf="savoirMenu === false" [ngClass]="{'d-none': savoir === false}"><p class="mb-4 pt-5">Savoir </p><p class="pt-5">Dipômes<br>Formation<br>Technique</p></h5>
+        <h5 class="card-title text-black m-0" *ngIf="savoirMenu === false" [ngClass]="{'d-none': savoir === true}"><p class="mb-4 pt-5">Savoir </p><p class="pt-5">Dipômes<br>Formation<br>Technique</p></h5>
+        <p class="card-text text-start text-light mb-0 pb-0  mirror" *ngIf="savoirMenu === true" [ngClass]="{'d-none': savoir === true}">- Diplômes<br><br>- Formations<br><br>- Languages<br><br>- Connaissances Techniques</p>
+        <p class="card-text text-start text-light mb-0 pb-0" *ngIf="savoirMenu === true" [ngClass]="{'d-none': savoir === false}">- Diplômes<br><br>- Formations<br><br>- Languages<br><br>- Connaissances Techniques</p>
+        </div>
+    </div>
+</button>
+<!--Carte "Diplôme"-->
+<button class="card-button m-3" (click)="onSavoirActive1()" *ngIf="tabShow[0] === true" [ngClass]="{'rotateIn': tabRotate[0] === true, 'rotateStart': tabRotate[0] === undefined,'rotateOut': tabRotate[0] === false }" >
+    <div class="card h-card bg-blue-light  card-border" [ngClass]="{'bg-blue-dark': tabMenu[0] === true}">
+        <img src="/assets/roiPique.png" alt="As de Pique savoir " class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[0] === true || tabActive[0] === false}" >
+        <img src="/assets/roiPique.png" alt="As de Pique savoir " class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[0] === true || tabActive[0] === true}" >
+        <div class="card-img-overlay center">
+        <h5 class="card-title text-black m-0 mirror" *ngIf="tabMenu[0] === false" [ngClass]="{'d-none': tabActive[0] === false}"><p>Diplômes</p></h5>
+        <h5 class="card-title text-black m-0" *ngIf="tabMenu[0] === false" [ngClass]="{'d-none': tabActive[0] === true}"><p>Diplômes</p></h5>
+        <p class="card-text text-center text-light mb-0 pb-0 mirror fs-6" *ngIf="tabMenu[0] === true" [ngClass]="{'d-none': tabActive[0] === true}">BTS DOMOTIQUE<br><a href="http://www.abwd.fr/Image/bts_domotique.jpg" title="BTS Domotique" target="_plank">Diplôme</a><br><br>BACCALAUREAT C<br><a href="#" title="Baccalauréat C" target="_plank">Diplôme</a></p>
+        <p class="card-text text-center text-light mb-0 pb-0 fs-6" *ngIf="tabMenu[0] === true" [ngClass]="{'d-none': tabActive[0] === false}">BTS DOMOTIQUE<br><a href="http://www.abwd.fr/Image/bts_domotique.jpg" title="BTS Domotique" target="_plank">Diplôme</a><br><br>BACCALAUREAT C<br><a href="#" title="Baccalauréat C" target="_plank">Diplôme</a></p>
+        </div>
+    </div> 
+</button>
+<!--Carte "Formations"-->
+<button class="card-button m-3" (click)="onSavoirActive2()" *ngIf="tabShow[1] === true" [ngClass]="{'rotateIn': tabRotate[1] === true, 'rotateStart': tabRotate[1] === undefined,'rotateOut': tabRotate[1] === false }" >
+    <div class="card h-card bg-blue-light  card-border" [ngClass]="{'bg-blue-dark': tabMenu[1] === true}">
+        <img src="/assets/reinePique.png" alt="As de Pique savoir " class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[1] === true || tabActive[1]=== false}" >
+        <img src="/assets/reinePique.png" alt="As de Pique savoir " class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[1] === true || tabActive[1]=== true}" >
+        <div class="card-img-overlay center">
+        <h5 class="card-title text-black m-0 mirror" *ngIf="tabMenu[1] === false" [ngClass]="{'d-none': tabActive[1]=== false}"><p>Formations</p></h5>
+        <h5 class="card-title text-black m-0" *ngIf="tabMenu[1] === false" [ngClass]="{'d-none': tabActive[1]=== true}"><p>Formations</p></h5>
+        <div class="card-text text-light mb-0 pb-0 mirror fs-6" *ngIf="tabMenu[1] === true" [ngClass]="{'d-none': tabActive[1]=== true}"><p class="text-center fs-7">Développeur Web et Web mobile ( anglais renforcé )<br><u>AFPA 100% en ligne</u> (2021-2022)</p><p class="text-center fs-7">MOOC<br><u>OpenClassRooms</u><br>(2021-2022)<br><a href="https://www.linkedin.com/in/boris-andermann-122086219/" title="Linkedin Rubrique Licences et Certifications" target="_plank" >Liste des certificats</a></p><p class="text-center fs-7">BTS Domotique<br><u>Lycée Bellevue Lyon</u> (1992-1994)</p></div>
+        <div class="card-text text-light mb-0 pb-0 fs-6" *ngIf="tabMenu[1] === true" [ngClass]="{'d-none': tabActive[1]=== false}"><p class="text-center fs-7">Développeur Web et Web mobile ( anglais renforcé )<br><u>AFPA 100% en ligne</u> (2021-2022)</p><p class="text-center fs-7">MOOC<br><u>OpenClassRooms</u><br>(2021-2022)<br><a href="https://www.linkedin.com/in/boris-andermann-122086219/" title="Linkedin Rubrique Licences et Certifications" target="_plank" >Liste des certificats</a></p><p class="text-center fs-7">BTS Domotique<br><u>Lycée Bellevue Lyon</u> (1992-1994)</p></div>
+        </div>
+    </div>
+</button>
+<!--Carte "Languages"-->
+<button class="card-button m-3" (click)="onSavoirActive3()" *ngIf="tabShow[2] === true" [ngClass]="{'rotateIn': tabRotate[2] === true, 'rotateStart': tabRotate[2] === undefined,'rotateOut': tabRotate[2] === false }" >
+    <div class="card h-card bg-blue-light  card-border" [ngClass]="{'bg-blue-dark': tabMenu[2] === true}">
+        <img src="/assets/valetPique.png" alt="As de Pique savoir " class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[2] === true || tabActive[2]=== false}" >
+        <img src="/assets/valetPique.png" alt="As de Pique savoir " class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[2] === true || tabActive[2]=== true}" >
+        <div class="card-img-overlay center">
+        <h5 class="card-title text-black m-0 mirror" *ngIf="tabMenu[2] === false" [ngClass]="{'d-none': tabActive[2]=== false}"><p>Languages</p></h5>
+        <h5 class="card-title text-black m-0" *ngIf="tabMenu[2] === false" [ngClass]="{'d-none': tabActive[2]=== true}"><p>Languages</p></h5>
+        <div class="card-text text-light mb-0 pb-0 mirror fs-6" *ngIf="tabMenu[2] === true" [ngClass]="{'d-none': tabActive[2]=== true}"><p class="text-start">- HTML-5<br>- CSS-3<br>- SCSS / SASS<br>- JavaScript<br>- TypeScript<br>- Pyhton (Bases)<br>- jQuery</p></div>
+        <div class="card-text text-light mb-0 pb-0 fs-6" *ngIf="tabMenu[2] === true" [ngClass]="{'d-none': tabActive[2]=== false}"><p class="text-center">C.I.M</p><p class="text-start"> <u>S.A.B :</u> de 2012 à 2018 à Biscarrosse(40)</p><p class="text-start fs-7">Responsable de la gestion du parc informatique et télécom, formation des utilisateurs, administration réseau, recherche et résolution de pannes, sur les 5 sites de la société SAB. </p></div>
+        </div>
+    </div>
+</button>
+<!--Carte "Connaissances techniques"-->
+<button class="card-button m-3" (click)="onSavoirActive4()" *ngIf="tabShow[3] === true" [ngClass]="{'rotateIn': tabRotate[3] === true, 'rotateStart': tabRotate[3] === undefined,'rotateOut': tabRotate[3] === false }" >
+    <div class="card h-card bg-blue-light  card-border" [ngClass]="{'bg-blue-dark': tabMenu[3] === true}">
+        <img src="/assets/dixPique.png" alt="As de Pique savoir " class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[3] === true || tabActive[3]=== false}" >
+        <img src="/assets/dixPique.png" alt="As de Pique savoir " class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[3] === true || tabActive[3]=== true}" >
+        <div class="card-img-overlay center">
+        <h5 class="card-title text-black m-0 mirror" *ngIf="tabMenu[3] === false" [ngClass]="{'d-none': tabActive[3]=== false}"><p>Connaissances Techniques</p></h5>
+        <h5 class="card-title text-black m-0" *ngIf="tabMenu[3] === false" [ngClass]="{'d-none': tabActive[3]=== true}"><p>Connaissances Techniques</p></h5>
+        <div class="card-text text-light mb-0 pb-0 mirror fs-6" *ngIf="tabMenu[3] === true" [ngClass]="{'d-none': tabActive[3]=== true}"><p class="text-start">- Bootstrap 5<br>- Angular 2<br>- Intégrer une maquette<br>- Tests Python et JS<br>- Animations CSS<br>- Utilisation Terminal<br>- Git et GitHub<br>- Référencement SEO<br>- API Rest<br>- Documentation</p></div>
+        <div class="card-text text-light mb-0 pb-0 fs-6" *ngIf="tabMenu[3] === true" [ngClass]="{'d-none': tabActive[3]=== false}"><p class="text-center">Chef de Secteur Textile</p><p class="text-start fs-7"> <u>S.A.B :</u>Hypermarché E.Leclerc de 2010 à 2014 à Biscarrosse(40)</p><p class="text-center">Store Manager</p><p class="text-start fs-7"> <u>C.E.F :</u>Grossiste en matériel électrique de 1994 à 2002 à Annecy(74)</p></div>
+        </div>
+    </div>
+</button>

@@ -1,0 +1,78 @@
+<!--Carte et table des matières du Menu "tout savoir"-->
+<button id="carreau" class="card-button m-3" (click)="onSavoirTout()" [ngClass]="{'rotateIn': rotateSavoirTout === false, 'rotateOut': rotateSavoirTout === true, 'mirror': rotateSavoirTout === undefined }" >
+    <div class="card h-card bg-blue-light  card-border" [ngClass]="{'bg-blue-dark': savoirToutMenu === true}">
+        <img src="/assets/asCarreau.png" alt="As de Carreau Tout Savoir Menu" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': savoirToutMenu === true || savoirTout === false}" >
+        <img src="/assets/asCarreau.png" alt="As de Carreau Tout Savoir Menu" class="card-img h-100 w-100 " [ngClass]="{'d-none': savoirToutMenu === true || savoirTout === true}" >
+        <div class="card-img-overlay center">
+        <h5 class="card-title text-danger m-0 mirror" *ngIf="savoirToutMenu === false" [ngClass]="{'d-none': savoirTout === false}"><p class="mb-3 pt-4">Tout Savoir</p><p class="pt-5">Informations Contact</p></h5>
+        <h5 class="card-title text-danger m-0" *ngIf="savoirToutMenu === false" [ngClass]="{'d-none': savoirTout === true}"><p class="mb-3 pt-4">Tout Savoir</p><p class="pt-5">Informations Contact</p></h5>
+        <p class="card-text text-start text-light mb-0 pb-0  mirror" *ngIf="savoirToutMenu === true" [ngClass]="{'d-none': savoirTout === true}">- Coordonnées<br><br>- Réseaux Sociaux<br><br>- Portfolio<br><br>- Centres d'intérêts<br><br>- Divers</p>
+        <p class="card-text text-start text-light mb-0 pb-0" *ngIf="savoirToutMenu === true" [ngClass]="{'d-none': savoirTout === false}">- Coordonnées<br><br>- Réseaux Sociaux<br><br>- Portfolio<br><br>- Centres d'intérêts<br><br>- Divers</p>
+        </div>
+    </div>
+</button>
+<!--Carte Photo Contact-->
+<button class="card-button m-3" (click)="onSavoirToutActive1()" *ngIf="tabShow[0] === true" [ngClass]="{'rotateIn': tabRotate[0] === true, 'rotateStart': tabRotate[0] === undefined,'rotateOut': tabRotate[0] === false }" >
+    <div class="card h-card bg-blue-light  card-border" [ngClass]="{'bg-blue-dark': tabMenu[0] === true}">
+        <img src="/assets/roiCarreau.png" alt="As de Carreau Tout Savoir Menu" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[0] === true || tabActive[0] === false}" >
+        <img src="/assets/roiCarreau.png" alt="As de Carreau Tout Savoir Menu" class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[0] === true || tabActive[0] === true}" >
+        <div class="card-img-overlay center">
+        <h5 class="card-title text-danger m-0 mirror" *ngIf="tabMenu[0] === false" [ngClass]="{'d-none': tabActive[0] === false}"><img src="/assets/photo.png" alt="Ma pomme" class="w-90"/><p>Coordonnées</p></h5>
+        <h5 class="card-title text-danger m-0" *ngIf="tabMenu[0] === false" [ngClass]="{'d-none': tabActive[0] === true}"><img src="/assets/photo.png" alt="Ma pomme" class="w-90"/><p>Coordonnées</p></h5>
+        <div class="card-text text-start text-light mb-0 pb-0 mirror fs-6" *ngIf="tabMenu[0] === true" [ngClass]="{'d-none': tabActive[0] === true}"><p class="text-center fs-5">Andermann Boris</p><p class="text-center">25 rue Séraphin Haulon 64100 Bayonne</p><p class="text-center"><u>Tel</u><br>06.13.78.84.45<br><u>Mail</u><br> andermannboris@yahoo.fr</p></div>
+        <div class="card-text text-start text-light mb-0 pb-0 fs-6" *ngIf="tabMenu[0] === true" [ngClass]="{'d-none': tabActive[0] === false}"><p class="text-center fs-5">Andermann Boris</p><p class="text-center">25 rue Séraphin Haulon 64100 Bayonne</p><p class="text-center"><u>Tel</u><br>06.13.78.84.45<br><u>Mail</u><br> andermannboris@yahoo.fr</p></div>
+        </div>
+    </div> 
+</button>
+<!--Carte Réseaux ( ha ha ha !)-->
+<button class="card-button m-3" (click)="onSavoirToutActive2()" *ngIf="tabShow[1] === true" [ngClass]="{'rotateIn': tabRotate[1] === true, 'rotateStart': tabRotate[1] === undefined,'rotateOut': tabRotate[1] === false }" >
+    <div class="card h-card bg-blue-light  card-border" [ngClass]="{'bg-blue-dark': tabMenu[1] === true}">
+        <img src="/assets/reineCarreau.png" alt="As de Carreau Tout Savoir Menu" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[1] === true || tabActive[1]=== false}" >
+        <img src="/assets/reineCarreau.png" alt="As de Carreau Tout Savoir Menu" class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[1] === true || tabActive[1]=== true}" >
+        <div class="card-img-overlay center">
+        <h5 class="card-title text-danger m-0 mirror" *ngIf="tabMenu[1] === false" [ngClass]="{'d-none': tabActive[1]=== false}"><p>Site</p><p>et</p><p>Réseaux Sociaux</p></h5>
+        <h5 class="card-title text-danger m-0" *ngIf="tabMenu[1] === false" [ngClass]="{'d-none': tabActive[1]=== true}"><p>Site</p><p>et</p><p>Réseaux Sociaux</p></h5>
+        <div class="card-text text-light mb-0 pb-0 mirror fs-6" *ngIf="tabMenu[1] === true" [ngClass]="{'d-none': tabActive[1]=== true}"><p class="text-center">Linkedin<br><a href="https://www.linkedin.com/in/boris-andermann-122086219/" title="Linkedin" target="_plank">Boris Andermann</a><br>GitHub<br><a href="https://github.com/AngusABWD" title="GitHub" target="_plank">Angus ABWD</a><br>Site<br><a href="http://www.abwd.fr/" title="ABWD" target="_plank">ABWD</a><br>Twitter<br><a href="https://twitter.com/AngusAbwd" title="Twitter" target="_plank">@AngusABWD</a></p></div>
+        <div class="card-text text-light mb-0 pb-0 fs-6" *ngIf="tabMenu[1] === true" [ngClass]="{'d-none': tabActive[1]=== false}"><p class="text-center">Linkedin<br><a href="https://www.linkedin.com/in/boris-andermann-122086219/" title="Linkedin" target="_plank">Boris Andermann</a><br>GitHub<br><a href="https://github.com/AngusABWD" title="GitHub" target="_plank">Angus ABWD</a><br>Site<br><a href="http://www.abwd.fr/" title="ABWD" target="_plank">ABWD</a><br>Twitter<br><a href="https://twitter.com/AngusAbwd" title="Twitter" target="_plank">@AngusABWD</a></p></div>
+        </div>
+    </div>
+</button>
+<!--Carte PorteFolio-->
+<button class="card-button m-3" (click)="onSavoirToutActive3()" *ngIf="tabShow[2] === true" [ngClass]="{'rotateIn': tabRotate[2] === true, 'rotateStart': tabRotate[2] === undefined,'rotateOut': tabRotate[2] === false }" >
+    <div class="card h-card bg-blue-light  card-border" [ngClass]="{'bg-blue-dark': tabMenu[2] === true}">
+        <img src="/assets/valetCarreau.png" alt="As de Carreau Tout Savoir Menu" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[2] === true || tabActive[2]=== false}" >
+        <img src="/assets/valetCarreau.png" alt="As de Carreau Tout Savoir Menu" class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[2] === true || tabActive[2]=== true}" >
+        <div class="card-img-overlay center">
+        <h5 class="card-title text-danger m-0 mirror" *ngIf="tabMenu[2] === false" [ngClass]="{'d-none': tabActive[2]=== false}"><p>Portfolio</p></h5>
+        <h5 class="card-title text-danger m-0" *ngIf="tabMenu[2] === false" [ngClass]="{'d-none': tabActive[2]=== true}"><p>Portfolio</p></h5>
+        <div class="card-text text-light mb-0 pb-0 mirror fs-6" *ngIf="tabMenu[2] === true" [ngClass]="{'d-none': tabActive[2]=== true}"><p class="text-center"><u>Réalisations</u></p><p class="text-start"></p><a href="http://www.abwd.fr/" title="ABWD" target="_plank">www.abwd.fr</a><br><a href="http://www.abwd.fr/Exercices_javascript/index.html" title="Exercices Javascript" target="_plank">Exercices JavaScript</a><br><a href="http://www.abwd.fr/FoodFacts/index.html" title="Food Facts" target="_plank">Food Facts</a><br><a href="http://www.abwd.fr/HeavensColt/index.html" title="Heaven's Colt" target="_plank">Heaven's Colt</a></div>
+        <div class="card-text text-light mb-0 pb-0 fs-6" *ngIf="tabMenu[2] === true" [ngClass]="{'d-none': tabActive[2]=== false}"><p class="text-center"><u>Réalisations</u></p><p class="text-start"></p><a href="http://www.abwd.fr/" title="ABWD" target="_plank">www.abwd.fr</a><br><a href="http://www.abwd.fr/Exercices_javascript/index.html" title="Exercices Javascript" target="_plank">Exercices JavaScript</a><br><a href="http://www.abwd.fr/FoodFacts/index.html" title="Food Facts" target="_plank">Food Facts</a><br><a href="http://www.abwd.fr/HeavensColt/index.html" title="Heaven's Colt" target="_plank">Heaven's Colt</a></div>
+        </div>
+    </div>
+</button>
+<!--Carte Divers-->
+<button class="card-button m-3" (click)="onSavoirToutActive4()" *ngIf="tabShow[3] === true" [ngClass]="{'rotateIn': tabRotate[3] === true, 'rotateStart': tabRotate[3] === undefined,'rotateOut': tabRotate[3] === false }" >
+    <div class="card h-card bg-blue-light  card-border" [ngClass]="{'bg-blue-dark': tabMenu[3] === true}">
+        <img src="/assets/dixCarreau.png" alt="As de Carreau Tout Savoir Menu" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[3] === true || tabActive[3]=== false}" >
+        <img src="/assets/dixCarreau.png" alt="As de Carreau Tout Savoir Menu" class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[3] === true || tabActive[3]=== true}" >
+        <div class="card-img-overlay center">
+        <h5 class="card-title text-danger m-0 mirror" *ngIf="tabMenu[3] === false" [ngClass]="{'d-none': tabActive[3]=== false}"><p>Dix-vers</p></h5>
+        <h5 class="card-title text-danger m-0" *ngIf="tabMenu[3] === false" [ngClass]="{'d-none': tabActive[3]=== true}"><p>Dix-vers</p></h5>
+        <div class="card-text text-light mb-0 pb-0 mirror fs-6" *ngIf="tabMenu[3] === true" [ngClass]="{'d-none': tabActive[3]=== true}"><p class="text-start">- Né le 15/02/1972<br>- Permis A<br>- Permis B<br>- Marié 2 enfants<br>Comme un autre AB<br>- Véhicule personnel<br>- Formation SST<br>- Caces 3<br>- Habilitation Électrique</p></div>
+        <div class="card-text text-light mb-0 pb-0 fs-6" *ngIf="tabMenu[3] === true" [ngClass]="{'d-none': tabActive[3]=== false}"><p class="text-start">- Analyser les besoins du client<br>- Etablir un cahier des charges<br>- Argumentaire ventes<br>- Négociation achats<br>- Devis / factures / encaissements<br>- Suivre un portefeuille client<br>- Merchandising</p></div>
+        </div>
+    </div>
+</button>
+<!--Carte Centre d'intérêt-->
+<button class="card-button m-3" (click)="onSavoirToutActive5()" *ngIf="tabShow[4] === true" [ngClass]="{'rotateIn': tabRotate[4] === true, 'rotateStart': tabRotate[4] === undefined,'rotateOut': tabRotate[4] === false }" >
+    <div class="card h-card bg-blue-light  card-border" [ngClass]="{'bg-black': tabMenu[4] === true}">
+        <img src="/assets/joker.png" alt="As de Carreau Tout Savoir Menu" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[4] === true || tabActive[4]=== false}" >
+        <img src="/assets/joker.png" alt="As de Carreau Tout Savoir Menu" class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[4] === true || tabActive[4]=== true}" >
+        <div class="card-img-overlay center">
+        <h5 class="card-title text-black m-0 mirror" *ngIf="tabMenu[4] === false" [ngClass]="{'d-none': tabActive[4]=== false}"><img src="/assets/Lemmy.jpg" alt="Lemmy" class="w-90"/><p>Centres d'intérêts</p></h5>
+        <h5 class="card-title text-black m-0" *ngIf="tabMenu[4] === false" [ngClass]="{'d-none': tabActive[4]=== true}"><img src="/assets/Lemmy.jpg" alt="Lemmy" class="w-90"/><p>Centres d'intérêts</p></h5>
+        <div class="card-text text-light mb-0 pb-0 mirror fs-6" *ngIf="tabMenu[4] === true" [ngClass]="{'d-none': tabActive[4]=== true}"><p class="text-center fs-7">Le gros Rock qui tâche<br>La Guitare électrique<br><br>La Moto <br>même si ma femme veut pas<br><br>Fitness-Musculation<br>Nutrition<br><br>Wolrd of Warcraft<br>Elite Dangerous<br>(même si j'ai plus le temps)</div>
+        <div class="card-text text-light mb-0 pb-0 fs-6" *ngIf="tabMenu[4] === true" [ngClass]="{'d-none': tabActive[4]=== false}"><p class="text-center fs-7">Le gros Rock qui tâche<br>La Guitare électrique<br><br>La Moto <br>même si ma femme veut pas<br><br>Fitness-Musculation<br>Nutrition<br><br>Wolrd of Warcraft<br>Elite Dangerous<br>(même si j'ai plus le temps)</div>
+        </div>
+    </div>
+</button>
