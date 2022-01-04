@@ -10,7 +10,7 @@
     color: #DFF2FF;
 }
 .bg-blue-dark {
-    background-color: #4169E1;
+    background: linear-gradient(blue,#4169E1);
 }
 .blue-dark {
     color: #4169E1;
@@ -33,7 +33,7 @@
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color: #6495ED;
+    background-color: transparent;
     border: none;
     box-shadow: black -6px 6px 6px;
     border-radius: 20px;
@@ -67,22 +67,6 @@
 		transform: rotateY(-180deg);
 		transform-style: preserve-3d;
 		transform-origin: center center 0px;
-		animation-timing-function: ease-in-out;
-	}
-	
-}
-@keyframes rotationIn {
-	from {
-		transform: rotateY(0deg);
-		transform-style: preserve-3d;
-		transform-origin: center  0px;
-		animation-timing-function: ease-in-out;
-		box-shadow: none;
-	}
-	to {
-		transform: rotateY(180deg);
-		transform-style: preserve-3d;
-		transform-origin: center  0px;
 		animation-timing-function: ease-in-out;
 	}
 	

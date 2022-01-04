@@ -1,7 +1,9 @@
 <button id="trefle" class="card-button m-3" (click)="onSavoirFaire()" [ngClass]="{'rotateIn': rotateSavoirFaire === false, 'rotateOut': rotateSavoirFaire === true, 'mirror': rotateSavoirFaire === undefined }" >
-    <div class="card h-card bg-blue-light  card-border" [ngClass]="{'bg-blue-dark': savoirFaireMenu === true}">
+    <div class="card h-card bg-blue-light  card-border">
         <img src="/assets/asTrefle.png" alt="As de trefle savoir faire" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': savoirFaireMenu === true || savoirFaire === false}" >
         <img src="/assets/asTrefle.png" alt="As de trefle savoir faire" class="card-img h-100 w-100 " [ngClass]="{'d-none': savoirFaireMenu === true || savoirFaire === true}" >
+        <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': savoirFaireMenu === false || savoirFaire === false}" >
+        <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 " [ngClass]="{'d-none': savoirFaireMenu === false || savoirFaire === true}" >
         <div class="card-img-overlay center">
         <h5 class="card-title text-black m-0 mirror" *ngIf="savoirFaireMenu === false" [ngClass]="{'d-none': savoirFaire === false}"><p class="mb-4 pt-4">Savoir Faire</p><p class="pt-5">Expériences Professionnelles</p></h5>
         <h5 class="card-title text-black m-0" *ngIf="savoirFaireMenu === false" [ngClass]="{'d-none': savoirFaire === true}"><p class="mb-4 pt-4">Savoir Faire</p><p class="pt-5">Expériences Professionnelles</p></h5>
@@ -11,21 +13,25 @@
     </div>
 </button>
 <button class="card-button m-3" (click)="onSavoirFaireActive1()" *ngIf="tabShow[0] === true" [ngClass]="{'rotateIn': tabRotate[0] === true, 'rotateStart': tabRotate[0] === undefined,'rotateOut': tabRotate[0] === false }" >
-    <div class="card h-card bg-blue-light  card-border" [ngClass]="{'bg-blue-dark': tabMenu[0] === true}">
+    <div class="card h-card bg-blue-light  card-border">
         <img src="/assets/roiTrefle.png" alt="As de trefle savoir faire" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[0] === true || tabActive[0] === false}" >
         <img src="/assets/roiTrefle.png" alt="As de trefle savoir faire" class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[0] === true || tabActive[0] === true}" >
+        <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[0] === false || tabActive[0] === false}" >
+        <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[0] === false || tabActive[0] === true}" >
         <div class="card-img-overlay center">
         <h5 class="card-title text-black m-0 mirror" *ngIf="tabMenu[0] === false" [ngClass]="{'d-none': tabActive[0] === false}"><p>Gérant de société</p><p>( 6 ans )</p></h5>
         <h5 class="card-title text-black m-0" *ngIf="tabMenu[0] === false" [ngClass]="{'d-none': tabActive[0] === true}"><p>Gérant de société</p><p>( 6 ans )</p></h5>
         <p class="card-text text-start text-light mb-0 pb-0 mirror fs-6" *ngIf="tabMenu[0] === true" [ngClass]="{'d-none': tabActive[0] === true}"><u>Société A.B.E :</u> Electricité générale de 2006 à 2010 à Annecy(74) <br><br><u>Société B.S.N :</u> Rééquilibrage Alimentaire de 2018 à 2020 à Anglet(64)</p>
-        <p class="card-text text-start text-light mb-0 pb-0 fs-6" *ngIf="tabMenu[0] === true" [ngClass]="{'d-none': tabActive[0] === false}"><u>Société A.B.E :</u> Electricité générale de 2006 à 2010 à Annecy(74) )<br><br><u>Société B.S.N :</u> Rééquilibrage Alimentaire de 2018 à 2020 à Anglet(64)</p>
+        <p class="card-text text-start text-light mb-0 pb-0 fs-6" *ngIf="tabMenu[0] === true" [ngClass]="{'d-none': tabActive[0] === false}"><u>Société A.B.E :</u> Electricité générale de 2006 à 2010 à Annecy(74) <br><br><u>Société B.S.N :</u> Rééquilibrage Alimentaire de 2018 à 2020 à Anglet(64)</p>
         </div>
     </div> 
 </button>
 <button class="card-button m-3" (click)="onSavoirFaireActive2()" *ngIf="tabShow[1] === true" [ngClass]="{'rotateIn': tabRotate[1] === true, 'rotateStart': tabRotate[1] === undefined,'rotateOut': tabRotate[1] === false }" >
-    <div class="card h-card bg-blue-light  card-border" [ngClass]="{'bg-blue-dark': tabMenu[1] === true}">
+    <div class="card h-card bg-blue-light  card-border">
         <img src="/assets/reineTrefle.png" alt="As de trefle savoir faire" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[1] === true || tabActive[1]=== false}" >
         <img src="/assets/reineTrefle.png" alt="As de trefle savoir faire" class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[1] === true || tabActive[1]=== true}" >
+        <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[1] === false || tabActive[1] === false}" >
+        <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[1] === false || tabActive[1] === true}" >
         <div class="card-img-overlay center">
         <h5 class="card-title text-black m-0 mirror" *ngIf="tabMenu[1] === false" [ngClass]="{'d-none': tabActive[1]=== false}"><p>Directeur de magasin</p><p>( 9 ans )</p></h5>
         <h5 class="card-title text-black m-0" *ngIf="tabMenu[1] === false" [ngClass]="{'d-none': tabActive[1]=== true}"><p>Directeur de magasin</p><p>( 9 ans )</p></h5>
@@ -35,9 +41,11 @@
     </div>
 </button>
 <button class="card-button m-3" (click)="onSavoirFaireActive3()" *ngIf="tabShow[2] === true" [ngClass]="{'rotateIn': tabRotate[2] === true, 'rotateStart': tabRotate[2] === undefined,'rotateOut': tabRotate[2] === false }" >
-    <div class="card h-card bg-blue-light  card-border" [ngClass]="{'bg-blue-dark': tabMenu[2] === true}">
+    <div class="card h-card bg-blue-light  card-border">
         <img src="/assets/valetTrefle.png" alt="As de trefle savoir faire" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[2] === true || tabActive[2]=== false}" >
         <img src="/assets/valetTrefle.png" alt="As de trefle savoir faire" class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[2] === true || tabActive[2]=== true}" >
+        <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[2] === false || tabActive[2] === false}" >
+        <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[2] === false || tabActive[2] === true}" >
         <div class="card-img-overlay center">
         <h5 class="card-title text-black m-0 mirror" *ngIf="tabMenu[2] === false" [ngClass]="{'d-none': tabActive[2]=== false}"><p>Responsable Informatique</p><p>( 6 ans )</p></h5>
         <h5 class="card-title text-black m-0" *ngIf="tabMenu[2] === false" [ngClass]="{'d-none': tabActive[2]=== true}"><p>Responsable Informatique</p><p>( 6 ans )</p></h5>
@@ -47,9 +55,11 @@
     </div>
 </button>
 <button class="card-button m-3" (click)="onSavoirFaireActive4()" *ngIf="tabShow[3] === true" [ngClass]="{'rotateIn': tabRotate[3] === true, 'rotateStart': tabRotate[3] === undefined,'rotateOut': tabRotate[3] === false }" >
-    <div class="card h-card bg-blue-light  card-border" [ngClass]="{'bg-blue-dark': tabMenu[3] === true}">
+    <div class="card h-card bg-blue-light  card-border">
         <img src="/assets/dixTrefle.png" alt="As de trefle savoir faire" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[3] === true || tabActive[3]=== false}" >
         <img src="/assets/dixTrefle.png" alt="As de trefle savoir faire" class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[3] === true || tabActive[3]=== true}" >
+        <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[3] === false || tabActive[3] === false}" >
+        <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[3] === false || tabActive[3] === true}" >
         <div class="card-img-overlay center">
         <h5 class="card-title text-black m-0 mirror" *ngIf="tabMenu[3] === false" [ngClass]="{'d-none': tabActive[3]=== false}"><p>Chef de rayon</p><p>( 12 ans )</p></h5>
         <h5 class="card-title text-black m-0" *ngIf="tabMenu[3] === false" [ngClass]="{'d-none': tabActive[3]=== true}"><p>Chef de rayon</p><p>( 12 ans )</p></h5>

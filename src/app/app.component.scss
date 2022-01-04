@@ -9,6 +9,15 @@
 .brandWidth {
     width: 60px !important;
 }
+.bg-fond {
+    background-image: url(/assets/fond.gif);
+    background-size: 100%;
+    box-shadow: black 6px 6px 6px;
+    @media screen and ( max-width: 992px ) {
+        background-size: 250%;
+        box-shadow: black 0px 0px 0px;
+        }
+}
 .bg-blue-light {
     background-color: #DFF2FF;
 }
@@ -16,20 +25,20 @@
     color: #DFF2FF;
 }
 .bg-blue-dark {
-    background-color: #4169E1;
+    background-color: steelblue;
 }
 .blue-dark {
-    color: #4169E1;
+    color: steelblue;
     border: none;
 }
 .imageMenu {
-    background-color:#6495ED;
+    background-color:steelblue;
     border: none;
 }
 .logoCarte {
     width: 25px;
     height: auto;
-    background-color:#6495ED;
+    background-color: steelblue;
     border-radius: 50%;
 }
 .nav-item {
@@ -54,3 +63,7 @@
 		opacity: 1;
 	}	
 }
+.navbar-toggler {
+    color: white;
+    border-color: white;
+  }

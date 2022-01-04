@@ -3,32 +3,32 @@
   <div class="content d-none"><span>CvMobileFirst app is running!</span> </div>
       <div class="row mx-lg-5 my-3">
           <div class="col-12 p-0">
-              <div class="center">
+              <div class="center bg-fond ">
                 <!--Barre de navigation avec ajout d'un bouton pour Mobile-->
-                  <nav class="col navbar justify-content-around navbar-dark bg-blue-dark p-0">
+                  <nav class="col navbar justify-content-around navbar-dark p-0">
                       <a class="navbar-brand me-4 mt-3 mb-md-3 me-md-5 brandWidth" href="http://www.abwd.fr" title="www.abwd.fr"><img class="logoMenu" src="/assets/angus.png" alt="logo angus abwd"/></a>
-                      <h1 class="blue-light text-center h3 mx-3 pt-3 pt-md-0 pe-1 pe-md-0 ms-md-5">CV Andermann Boris</h1>
+                      <h1 class="text-white text-center h2  pt-3 pt-md-0 pe-1 pe-md-0 ms-md-5">CV Andermann Boris<br><span class="h4"><u>Développeur Web</u></span></h1>
                       <button class="navbar-toggler me-4 my-3 d-lg-none" type="button" data-toggle="collapse" (click)="onCollapse()" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
                       </button>
-                      <h2 class="blue-light text-center h3 ms-3">Les cartes pour réussir</h2>
+                      <h2 class="blue-light text-center h3 ms-2">Les cartes pour réussir</h2>
                       <a class="h6 d-none d-lg-block blue-light pcredits" href="#" (click)="onCredits()">Crédits</a>
                       <div id="navbarContent" class="navbar-collapse" [ngClass]="{'collapse': collapseMenu === true}">
-                          <ul class="navbar-nav">
+                          <ul class="navbar-nav blue-light">
                               <li class="nav-item h5 d-lg-none center py-2 m-0">
-                                <a class="nav-link p-0" (click)="onCollapse()" (click)="onSavoirFaireShow()"><img class="logoCarte mx-3" src="/assets/trefle.png" alt="Trefle"/>Savoir-faire</a>
+                                <a class="nav-link p-0 text-white" (click)="onCollapse()" (click)="onSavoirFaireShow()"><img class="logoCarte mx-3" src="/assets/trefle.png" alt="Trefle"/>Savoir-faire</a>
                               </li>               
                               <li class="nav-item h5 d-lg-none center py-2 m-0" >
-                                <a class="nav-link p-0" (click)="onCollapse()" (click)="onSavoirEtreShow()"><img class="logoCarte mx-3" src="/assets/coeur.png" alt="Coeur"/>Savoir-être</a>
+                                <a class="nav-link p-0 text-white" (click)="onCollapse()" (click)="onSavoirEtreShow()"><img class="logoCarte mx-3" src="/assets/coeur.png" alt="Coeur"/>Savoir-être</a>
                               </li>
                               <li class="nav-item h5 d-lg-none center py-2 m-0" >
-                                <a class="nav-link p-0" (click)="onCollapse()" (click)="onSavoirShow()"><img class="logoCarte mx-3" src="/assets/pique.png" alt="Pique"/>Savoir</a>
+                                <a class="nav-link p-0 text-white" (click)="onCollapse()" (click)="onSavoirShow()"><img class="logoCarte mx-3" src="/assets/pique.png" alt="Pique"/>Savoir</a>
                               </li>
                               <li class="nav-item h5 d-lg-none center py-2 m-0" >
-                                <a class="nav-link p-0" (click)="onCollapse()" (click)="onToutSavoirShow()"><img class="logoCarte mx-3" src="/assets/carreau.png" alt="Carreau"/>Tout-savoir</a>
+                                <a class="nav-link p-0 text-white" (click)="onCollapse()" (click)="onToutSavoirShow()"><img class="logoCarte mx-3" src="/assets/carreau.png" alt="Carreau"/>Tout-savoir</a>
                               </li>
                               <li class="nav-item h6 d-lg-none center py-2 m-0" >
-                                <a class="nav-link p-0" (click)="onCollapse()" (click)="onCredits()">Crédits</a>
+                                <a class="nav-link p-0 text-white" (click)="onCollapse()" (click)="onCredits()">Crédits</a>
                               </li>
                           </ul>
                       </div>
@@ -43,7 +43,7 @@
                 <img src="/assets/4as.png" alt="quatre as à choisir"/>
             </button>   
         </div>
-        <p class="text-center h3 blue-dark d-lg-none">Choisissez une carte</p>
+        <p class="text-center h3 blue-light d-lg-none">Choisissez une carte</p>
       </div>
       <div class="row mx-lg-5">
         <!--Composants : 1 colonne par couleur ou 1 couleur sur mobile-->

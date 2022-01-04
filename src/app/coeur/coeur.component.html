@@ -1,21 +1,25 @@
 <!--Carte et table des matières du Menu "savoir être"-->
 <button id="coeur" class="card-button m-3" (click)="onSavoirEtre()" [ngClass]="{'rotateIn': rotateSavoirEtre === false, 'rotateOut': rotateSavoirEtre === true, 'mirror': rotateSavoirEtre === undefined }" >
-    <div class="card h-card bg-blue-light  card-border" [ngClass]="{'bg-blue-dark': savoirEtreMenu === true}">
+    <div class="card h-card bg-blue-light  card-border">
         <img src="/assets/asCoeur.png" alt="As de coeur savoir être Menu" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': savoirEtreMenu === true || savoirEtre === false}" >
         <img src="/assets/asCoeur.png" alt="As de coeur savoir être Menu" class="card-img h-100 w-100 " [ngClass]="{'d-none': savoirEtreMenu === true || savoirEtre === true}" >
+        <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': savoirEtreMenu === false || savoirEtre === false}" >
+        <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 " [ngClass]="{'d-none': savoirEtreMenu === false || savoirEtre === true}" >
         <div class="card-img-overlay center">
         <h5 class="card-title text-danger m-0 mirror" *ngIf="savoirEtreMenu === false" [ngClass]="{'d-none': savoirEtre === false}"><p class="mb-3 pt-4">Savoir Être</p><p class="pt-5">Compétences Professionnelles</p></h5>
         <h5 class="card-title text-danger m-0" *ngIf="savoirEtreMenu === false" [ngClass]="{'d-none': savoirEtre === true}"><p class="mb-3 pt-4">Savoir Être</p><p class="pt-5">Compétences Professionnelles</p></h5>
-        <p class="card-text text-start text-light mb-0 pb-0  mirror" *ngIf="savoirEtreMenu === true" [ngClass]="{'d-none': savoirEtre === true}">- Soft Skills<br><br>- Travail en équipe<br><br>- Management<br><br>- Commerciale</p>
-        <p class="card-text text-start text-light mb-0 pb-0" *ngIf="savoirEtreMenu === true" [ngClass]="{'d-none': savoirEtre === false}">- Soft Skills<br><br>- Travail en équipe<br><br>- Management<br><br>- Commerciale</p>
+        <p class="card-text text-start text-light mb-0 pb-0  mirror" *ngIf="savoirEtreMenu === true" [ngClass]="{'d-none': savoirEtre === true}">- Soft Skills<br><br>- Gestion de projet<br><br>- Management<br><br>- Commerciale</p>
+        <p class="card-text text-start text-light mb-0 pb-0" *ngIf="savoirEtreMenu === true" [ngClass]="{'d-none': savoirEtre === false}">- Soft Skills<br><br>- Gestion de projet<br><br>- Management<br><br>- Commerciale</p>
         </div>
     </div>
 </button>
 <!--Carte Soft Skills-->
 <button class="card-button m-3" (click)="onSavoirEtreActive1()" *ngIf="tabShow[0] === true" [ngClass]="{'rotateIn': tabRotate[0] === true, 'rotateStart': tabRotate[0] === undefined,'rotateOut': tabRotate[0] === false }" >
-    <div class="card h-card bg-blue-light  card-border" [ngClass]="{'bg-blue-dark': tabMenu[0] === true}">
+    <div class="card h-card bg-blue-light  card-border">
         <img src="/assets/roiCoeur.png" alt="As de coeur savoir être Menu" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[0] === true || tabActive[0] === false}" >
         <img src="/assets/roiCoeur.png" alt="As de coeur savoir être Menu" class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[0] === true || tabActive[0] === true}" >
+        <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[0] === false || tabActive[0] === false}" >
+        <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[0] === false || tabActive[0] === true}" >
         <div class="card-img-overlay center">
         <h5 class="card-title text-danger m-0 mirror" *ngIf="tabMenu[0] === false" [ngClass]="{'d-none': tabActive[0] === false}"><p>Soft Skills</p></h5>
         <h5 class="card-title text-danger m-0" *ngIf="tabMenu[0] === false" [ngClass]="{'d-none': tabActive[0] === true}"><p>Soft Skills</p></h5>
@@ -26,12 +30,14 @@
 </button>
 <!--Carte Travail en équipe-->
 <button class="card-button m-3" (click)="onSavoirEtreActive2()" *ngIf="tabShow[1] === true" [ngClass]="{'rotateIn': tabRotate[1] === true, 'rotateStart': tabRotate[1] === undefined,'rotateOut': tabRotate[1] === false }" >
-    <div class="card h-card bg-blue-light  card-border" [ngClass]="{'bg-blue-dark': tabMenu[1] === true}">
+    <div class="card h-card bg-blue-light  card-border">
         <img src="/assets/reineCoeur.png" alt="As de coeur savoir être Menu" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[1] === true || tabActive[1]=== false}" >
         <img src="/assets/reineCoeur.png" alt="As de coeur savoir être Menu" class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[1] === true || tabActive[1]=== true}" >
+        <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[1] === false || tabActive[1] === false}" >
+        <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[1] === false || tabActive[1] === true}" >
         <div class="card-img-overlay center">
-        <h5 class="card-title text-danger m-0 mirror" *ngIf="tabMenu[1] === false" [ngClass]="{'d-none': tabActive[1]=== false}"><p>Travail en équipe</p><p>( 21 ans )</p></h5>
-        <h5 class="card-title text-danger m-0" *ngIf="tabMenu[1] === false" [ngClass]="{'d-none': tabActive[1]=== true}"><p>Travail en équipe</p><p>( 21 ans )</p></h5>
+        <h5 class="card-title text-danger m-0 mirror" *ngIf="tabMenu[1] === false" [ngClass]="{'d-none': tabActive[1]=== false}"><p>Gestion<br>de projet</p><p>( 21 ans )</p></h5>
+        <h5 class="card-title text-danger m-0" *ngIf="tabMenu[1] === false" [ngClass]="{'d-none': tabActive[1]=== true}"><p>Gestion<br>de projet</p><p>( 21 ans )</p></h5>
         <div class="card-text text-light mb-0 pb-0 mirror fs-6" *ngIf="tabMenu[1] === true" [ngClass]="{'d-none': tabActive[1]=== true}"><p class="text-start">- Animer une réunion<br>- Méthode AGILE et SCRUM<br>- Former et assiter techniquement<br>- Coordonner l'activité d'une équipe<br>- Traiter l'information et communiquer<br>- Recrutement et RH</p></div>
         <div class="card-text text-light mb-0 pb-0 fs-6" *ngIf="tabMenu[1] === true" [ngClass]="{'d-none': tabActive[1]=== false}"><p class="text-start">- Animer une réunion<br>- Méthode AGILE et SCRUM<br>- Former et assiter techniquement<br>- Coordonner l'activité d'une équipe<br>- Traiter l'information et communiquer<br>- Recrutement et RH</p></div>
         </div>
@@ -39,9 +45,11 @@
 </button>
 <!--Carte Management-->
 <button class="card-button m-3" (click)="onSavoirEtreActive3()" *ngIf="tabShow[2] === true" [ngClass]="{'rotateIn': tabRotate[2] === true, 'rotateStart': tabRotate[2] === undefined,'rotateOut': tabRotate[2] === false }" >
-    <div class="card h-card bg-blue-light  card-border" [ngClass]="{'bg-blue-dark': tabMenu[2] === true}">
+    <div class="card h-card bg-blue-light  card-border">
         <img src="/assets/valetCoeur.png" alt="As de coeur savoir être Menu" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[2] === true || tabActive[2]=== false}" >
         <img src="/assets/valetCoeur.png" alt="As de coeur savoir être Menu" class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[2] === true || tabActive[2]=== true}" >
+        <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[2] === false || tabActive[2] === false}" >
+        <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[2] === false || tabActive[2] === true}" >
         <div class="card-img-overlay center">
         <h5 class="card-title text-danger m-0 mirror" *ngIf="tabMenu[2] === false" [ngClass]="{'d-none': tabActive[2]=== false}"><p>Management</p><p>( 15 ans )</p></h5>
         <h5 class="card-title text-danger m-0" *ngIf="tabMenu[2] === false" [ngClass]="{'d-none': tabActive[2]=== true}"><p>Management</p><p>( 15 ans )</p></h5>
@@ -52,9 +60,11 @@
 </button>
 <!--Carte Commercial-->
 <button class="card-button m-3" (click)="onSavoirEtreActive4()" *ngIf="tabShow[3] === true" [ngClass]="{'rotateIn': tabRotate[3] === true, 'rotateStart': tabRotate[3] === undefined,'rotateOut': tabRotate[3] === false }" >
-    <div class="card h-card bg-blue-light  card-border" [ngClass]="{'bg-blue-dark': tabMenu[3] === true}">
+    <div class="card h-card bg-blue-light  card-border">
         <img src="/assets/dixCoeur.png" alt="As de coeur savoir être Menu" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[3] === true || tabActive[3]=== false}" >
         <img src="/assets/dixCoeur.png" alt="As de coeur savoir être Menu" class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[3] === true || tabActive[3]=== true}" >
+        <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[3] === false || tabActive[3] === false}" >
+        <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[3] === false || tabActive[3] === true}" >
         <div class="card-img-overlay center">
         <h5 class="card-title text-danger m-0 mirror" *ngIf="tabMenu[3] === false" [ngClass]="{'d-none': tabActive[3]=== false}"><p>Commerciale</p><p>( 27 ans )</p></h5>
         <h5 class="card-title text-danger m-0" *ngIf="tabMenu[3] === false" [ngClass]="{'d-none': tabActive[3]=== true}"><p>Commerciale</p><p>( 27 ans )</p></h5>

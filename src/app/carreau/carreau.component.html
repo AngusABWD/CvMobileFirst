@@ -1,8 +1,10 @@
 <!--Carte et table des matières du Menu "tout savoir"-->
 <button id="carreau" class="card-button m-3" (click)="onSavoirTout()" [ngClass]="{'rotateIn': rotateSavoirTout === false, 'rotateOut': rotateSavoirTout === true, 'mirror': rotateSavoirTout === undefined }" >
-    <div class="card h-card bg-blue-light  card-border" [ngClass]="{'bg-blue-dark': savoirToutMenu === true}">
+    <div class="card h-card bg-blue-light  card-border">
         <img src="/assets/asCarreau.png" alt="As de Carreau Tout Savoir Menu" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': savoirToutMenu === true || savoirTout === false}" >
         <img src="/assets/asCarreau.png" alt="As de Carreau Tout Savoir Menu" class="card-img h-100 w-100 " [ngClass]="{'d-none': savoirToutMenu === true || savoirTout === true}" >
+        <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': savoirToutMenu === false || savoirTout === false}" >
+        <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 " [ngClass]="{'d-none': savoirToutMenu === false || savoirTout === true}" >
         <div class="card-img-overlay center">
         <h5 class="card-title text-danger m-0 mirror" *ngIf="savoirToutMenu === false" [ngClass]="{'d-none': savoirTout === false}"><p class="mb-3 pt-4">Tout Savoir</p><p class="pt-5">Informations Contact</p></h5>
         <h5 class="card-title text-danger m-0" *ngIf="savoirToutMenu === false" [ngClass]="{'d-none': savoirTout === true}"><p class="mb-3 pt-4">Tout Savoir</p><p class="pt-5">Informations Contact</p></h5>
@@ -13,9 +15,11 @@
 </button>
 <!--Carte Photo Contact-->
 <button class="card-button m-3" (click)="onSavoirToutActive1()" *ngIf="tabShow[0] === true" [ngClass]="{'rotateIn': tabRotate[0] === true, 'rotateStart': tabRotate[0] === undefined,'rotateOut': tabRotate[0] === false }" >
-    <div class="card h-card bg-blue-light  card-border" [ngClass]="{'bg-blue-dark': tabMenu[0] === true}">
+    <div class="card h-card bg-blue-light  card-border">
         <img src="/assets/roiCarreau.png" alt="As de Carreau Tout Savoir Menu" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[0] === true || tabActive[0] === false}" >
         <img src="/assets/roiCarreau.png" alt="As de Carreau Tout Savoir Menu" class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[0] === true || tabActive[0] === true}" >
+        <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[0] === false || tabActive[0] === false}" >
+        <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[0] === false || tabActive[0] === true}" >
         <div class="card-img-overlay center">
         <h5 class="card-title text-danger m-0 mirror" *ngIf="tabMenu[0] === false" [ngClass]="{'d-none': tabActive[0] === false}"><img src="/assets/photo.png" alt="Ma pomme" class="w-90"/><p>Coordonnées</p></h5>
         <h5 class="card-title text-danger m-0" *ngIf="tabMenu[0] === false" [ngClass]="{'d-none': tabActive[0] === true}"><img src="/assets/photo.png" alt="Ma pomme" class="w-90"/><p>Coordonnées</p></h5>
@@ -26,9 +30,11 @@
 </button>
 <!--Carte Réseaux ( ha ha ha !)-->
 <button class="card-button m-3" (click)="onSavoirToutActive2()" *ngIf="tabShow[1] === true" [ngClass]="{'rotateIn': tabRotate[1] === true, 'rotateStart': tabRotate[1] === undefined,'rotateOut': tabRotate[1] === false }" >
-    <div class="card h-card bg-blue-light  card-border" [ngClass]="{'bg-blue-dark': tabMenu[1] === true}">
+    <div class="card h-card bg-blue-light  card-border">
         <img src="/assets/reineCarreau.png" alt="As de Carreau Tout Savoir Menu" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[1] === true || tabActive[1]=== false}" >
         <img src="/assets/reineCarreau.png" alt="As de Carreau Tout Savoir Menu" class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[1] === true || tabActive[1]=== true}" >
+        <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[1] === false || tabActive[1] === false}" >
+        <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[1] === false || tabActive[1] === true}" >
         <div class="card-img-overlay center">
         <h5 class="card-title text-danger m-0 mirror" *ngIf="tabMenu[1] === false" [ngClass]="{'d-none': tabActive[1]=== false}"><p>Site</p><p>et</p><p>Réseaux Sociaux</p></h5>
         <h5 class="card-title text-danger m-0" *ngIf="tabMenu[1] === false" [ngClass]="{'d-none': tabActive[1]=== true}"><p>Site</p><p>et</p><p>Réseaux Sociaux</p></h5>
@@ -39,9 +45,11 @@
 </button>
 <!--Carte PorteFolio-->
 <button class="card-button m-3" (click)="onSavoirToutActive3()" *ngIf="tabShow[2] === true" [ngClass]="{'rotateIn': tabRotate[2] === true, 'rotateStart': tabRotate[2] === undefined,'rotateOut': tabRotate[2] === false }" >
-    <div class="card h-card bg-blue-light  card-border" [ngClass]="{'bg-blue-dark': tabMenu[2] === true}">
+    <div class="card h-card bg-blue-light  card-border">
         <img src="/assets/valetCarreau.png" alt="As de Carreau Tout Savoir Menu" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[2] === true || tabActive[2]=== false}" >
         <img src="/assets/valetCarreau.png" alt="As de Carreau Tout Savoir Menu" class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[2] === true || tabActive[2]=== true}" >
+        <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[2] === false || tabActive[2] === false}" >
+        <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[2] === false || tabActive[2] === true}" >
         <div class="card-img-overlay center">
         <h5 class="card-title text-danger m-0 mirror" *ngIf="tabMenu[2] === false" [ngClass]="{'d-none': tabActive[2]=== false}"><p>Portfolio</p></h5>
         <h5 class="card-title text-danger m-0" *ngIf="tabMenu[2] === false" [ngClass]="{'d-none': tabActive[2]=== true}"><p>Portfolio</p></h5>
@@ -52,14 +60,16 @@
 </button>
 <!--Carte Divers-->
 <button class="card-button m-3" (click)="onSavoirToutActive4()" *ngIf="tabShow[3] === true" [ngClass]="{'rotateIn': tabRotate[3] === true, 'rotateStart': tabRotate[3] === undefined,'rotateOut': tabRotate[3] === false }" >
-    <div class="card h-card bg-blue-light  card-border" [ngClass]="{'bg-blue-dark': tabMenu[3] === true}">
+    <div class="card h-card bg-blue-light  card-border">
         <img src="/assets/dixCarreau.png" alt="As de Carreau Tout Savoir Menu" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[3] === true || tabActive[3]=== false}" >
         <img src="/assets/dixCarreau.png" alt="As de Carreau Tout Savoir Menu" class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[3] === true || tabActive[3]=== true}" >
+        <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[3] === false || tabActive[3] === false}" >
+        <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[3] === false || tabActive[3] === true}" >
         <div class="card-img-overlay center">
         <h5 class="card-title text-danger m-0 mirror" *ngIf="tabMenu[3] === false" [ngClass]="{'d-none': tabActive[3]=== false}"><p>Dix-vers</p></h5>
         <h5 class="card-title text-danger m-0" *ngIf="tabMenu[3] === false" [ngClass]="{'d-none': tabActive[3]=== true}"><p>Dix-vers</p></h5>
         <div class="card-text text-light mb-0 pb-0 mirror fs-6" *ngIf="tabMenu[3] === true" [ngClass]="{'d-none': tabActive[3]=== true}"><p class="text-start">- Né le 15/02/1972<br>- Permis A<br>- Permis B<br>- Marié 2 enfants<br>Comme un autre AB<br>- Véhicule personnel<br>- Formation SST<br>- Caces 3<br>- Habilitation Électrique</p></div>
-        <div class="card-text text-light mb-0 pb-0 fs-6" *ngIf="tabMenu[3] === true" [ngClass]="{'d-none': tabActive[3]=== false}"><p class="text-start">- Analyser les besoins du client<br>- Etablir un cahier des charges<br>- Argumentaire ventes<br>- Négociation achats<br>- Devis / factures / encaissements<br>- Suivre un portefeuille client<br>- Merchandising</p></div>
+        <div class="card-text text-light mb-0 pb-0 fs-6" *ngIf="tabMenu[3] === true" [ngClass]="{'d-none': tabActive[3]=== false}"><p class="text-start">- Né le 15/02/1972<br>- Permis A<br>- Permis B<br>- Marié 2 enfants<br>Comme un autre AB<br>- Véhicule personnel<br>- Formation SST<br>- Caces 3<br>- Habilitation Électrique</p></div>
         </div>
     </div>
 </button>
