@@ -1,6 +1,6 @@
 <!--Carte et table des matières du Menu "savoir"-->
 <button id="Pique" class="card-button m-3" (click)="onSavoir()" [ngClass]="{'rotateIn': rotateSavoir === false, 'rotateOut': rotateSavoir === true, 'mirror': rotateSavoir === undefined }" >
-    <div class="card h-card bg-blue-light  card-border">
+    <div class="card h-card card-border">
         <img src="/assets/asPique.png" alt="As de Pique savoir " class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': savoirMenu === true || savoir === false}" >
         <img src="/assets/asPique.png" alt="As de Pique savoir " class="card-img h-100 w-100 " [ngClass]="{'d-none': savoirMenu === true || savoir === true}" >
         <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': savoirMenu === false || savoir === false}" >
@@ -15,7 +15,7 @@
 </button>
 <!--Carte "Diplôme"-->
 <button class="card-button m-3" (click)="onSavoirActive1()" *ngIf="tabShow[0] === true" [ngClass]="{'rotateIn': tabRotate[0] === true, 'rotateStart': tabRotate[0] === undefined,'rotateOut': tabRotate[0] === false }" >
-    <div class="card h-card bg-blue-light  card-border">
+    <div class="card h-card card-border">
         <img src="/assets/roiPique.png" alt="As de Pique savoir " class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[0] === true || tabActive[0] === false}" >
         <img src="/assets/roiPique.png" alt="As de Pique savoir " class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[0] === true || tabActive[0] === true}" >
         <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[0] === false || tabActive[0] === false}" >
@@ -30,7 +30,7 @@
 </button>
 <!--Carte "Formations"-->
 <button class="card-button m-3" (click)="onSavoirActive2()" *ngIf="tabShow[1] === true" [ngClass]="{'rotateIn': tabRotate[1] === true, 'rotateStart': tabRotate[1] === undefined,'rotateOut': tabRotate[1] === false }" >
-    <div class="card h-card bg-blue-light  card-border">
+    <div class="card h-card card-border">
         <img src="/assets/reinePique.png" alt="As de Pique savoir " class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[1] === true || tabActive[1]=== false}" >
         <img src="/assets/reinePique.png" alt="As de Pique savoir " class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[1] === true || tabActive[1]=== true}" >
         <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[1] === false || tabActive[1] === false}" >
@@ -45,7 +45,7 @@
 </button>
 <!--Carte "Languages"-->
 <button class="card-button m-3" (click)="onSavoirActive3()" *ngIf="tabShow[2] === true" [ngClass]="{'rotateIn': tabRotate[2] === true, 'rotateStart': tabRotate[2] === undefined,'rotateOut': tabRotate[2] === false }" >
-    <div class="card h-card bg-blue-light  card-border">
+    <div class="card h-card card-border">
         <img src="/assets/valetPique.png" alt="As de Pique savoir " class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[2] === true || tabActive[2]=== false}" >
         <img src="/assets/valetPique.png" alt="As de Pique savoir " class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[2] === true || tabActive[2]=== true}" >
         <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[2] === false || tabActive[2] === false}" >
@@ -60,7 +60,7 @@
 </button>
 <!--Carte "Connaissances techniques"-->
 <button class="card-button m-3" (click)="onSavoirActive4()" *ngIf="tabShow[3] === true" [ngClass]="{'rotateIn': tabRotate[3] === true, 'rotateStart': tabRotate[3] === undefined,'rotateOut': tabRotate[3] === false }" >
-    <div class="card h-card bg-blue-light  card-border">
+    <div class="card h-card card-border">
         <img src="/assets/dixPique.png" alt="As de Pique savoir " class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[3] === true || tabActive[3]=== false}" >
         <img src="/assets/dixPique.png" alt="As de Pique savoir " class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[3] === true || tabActive[3]=== true}" >
         <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[3] === false || tabActive[3] === false}" >

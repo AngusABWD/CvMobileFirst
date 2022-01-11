@@ -1,5 +1,5 @@
 <button id="trefle" class="card-button m-3" (click)="onSavoirFaire()" [ngClass]="{'rotateIn': rotateSavoirFaire === false, 'rotateOut': rotateSavoirFaire === true, 'mirror': rotateSavoirFaire === undefined }" >
-    <div class="card h-card bg-blue-light  card-border">
+    <div class="card h-card card-border">
         <img src="/assets/asTrefle.png" alt="As de trefle savoir faire" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': savoirFaireMenu === true || savoirFaire === false}" >
         <img src="/assets/asTrefle.png" alt="As de trefle savoir faire" class="card-img h-100 w-100 " [ngClass]="{'d-none': savoirFaireMenu === true || savoirFaire === true}" >
         <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': savoirFaireMenu === false || savoirFaire === false}" >
@@ -13,7 +13,7 @@
     </div>
 </button>
 <button class="card-button m-3" (click)="onSavoirFaireActive1()" *ngIf="tabShow[0] === true" [ngClass]="{'rotateIn': tabRotate[0] === true, 'rotateStart': tabRotate[0] === undefined,'rotateOut': tabRotate[0] === false }" >
-    <div class="card h-card bg-blue-light  card-border">
+    <div class="card h-card card-border">
         <img src="/assets/roiTrefle.png" alt="As de trefle savoir faire" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[0] === true || tabActive[0] === false}" >
         <img src="/assets/roiTrefle.png" alt="As de trefle savoir faire" class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[0] === true || tabActive[0] === true}" >
         <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[0] === false || tabActive[0] === false}" >
@@ -27,7 +27,7 @@
     </div> 
 </button>
 <button class="card-button m-3" (click)="onSavoirFaireActive2()" *ngIf="tabShow[1] === true" [ngClass]="{'rotateIn': tabRotate[1] === true, 'rotateStart': tabRotate[1] === undefined,'rotateOut': tabRotate[1] === false }" >
-    <div class="card h-card bg-blue-light  card-border">
+    <div class="card h-card card-border">
         <img src="/assets/reineTrefle.png" alt="As de trefle savoir faire" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[1] === true || tabActive[1]=== false}" >
         <img src="/assets/reineTrefle.png" alt="As de trefle savoir faire" class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[1] === true || tabActive[1]=== true}" >
         <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[1] === false || tabActive[1] === false}" >
@@ -41,7 +41,7 @@
     </div>
 </button>
 <button class="card-button m-3" (click)="onSavoirFaireActive3()" *ngIf="tabShow[2] === true" [ngClass]="{'rotateIn': tabRotate[2] === true, 'rotateStart': tabRotate[2] === undefined,'rotateOut': tabRotate[2] === false }" >
-    <div class="card h-card bg-blue-light  card-border">
+    <div class="card h-card card-border">
         <img src="/assets/valetTrefle.png" alt="As de trefle savoir faire" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[2] === true || tabActive[2]=== false}" >
         <img src="/assets/valetTrefle.png" alt="As de trefle savoir faire" class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[2] === true || tabActive[2]=== true}" >
         <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[2] === false || tabActive[2] === false}" >
@@ -55,7 +55,7 @@
     </div>
 </button>
 <button class="card-button m-3" (click)="onSavoirFaireActive4()" *ngIf="tabShow[3] === true" [ngClass]="{'rotateIn': tabRotate[3] === true, 'rotateStart': tabRotate[3] === undefined,'rotateOut': tabRotate[3] === false }" >
-    <div class="card h-card bg-blue-light  card-border">
+    <div class="card h-card card-border">
         <img src="/assets/dixTrefle.png" alt="As de trefle savoir faire" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[3] === true || tabActive[3]=== false}" >
         <img src="/assets/dixTrefle.png" alt="As de trefle savoir faire" class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[3] === true || tabActive[3]=== true}" >
         <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[3] === false || tabActive[3] === false}" >
