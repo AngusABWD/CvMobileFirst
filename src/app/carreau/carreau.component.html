@@ -8,8 +8,8 @@
         <div class="card-img-overlay center">
         <h5 class="card-title text-danger m-0 mirror" *ngIf="savoirToutMenu === false" [ngClass]="{'d-none': savoirTout === false}"><p class="mb-3 pt-4">Tout Savoir</p><p class="pt-5">Informations Contact</p></h5>
         <h5 class="card-title text-danger m-0" *ngIf="savoirToutMenu === false" [ngClass]="{'d-none': savoirTout === true}"><p class="mb-3 pt-4">Tout Savoir</p><p class="pt-5">Informations Contact</p></h5>
-        <p class="card-text text-start text-light mb-0 pb-0  mirror" *ngIf="savoirToutMenu === true" [ngClass]="{'d-none': savoirTout === true}">- Coordonnées<br><br>- Réseaux Sociaux<br><br>- Portfolio<br><br>- Centres d'intérêts<br><br>- Divers</p>
-        <p class="card-text text-start text-light mb-0 pb-0" *ngIf="savoirToutMenu === true" [ngClass]="{'d-none': savoirTout === false}">- Coordonnées<br><br>- Réseaux Sociaux<br><br>- Portfolio<br><br>- Centres d'intérêts<br><br>- Divers</p>
+        <div class="card-text text-start text-light mb-0 pb-0  mirror" *ngIf="savoirToutMenu === true" [ngClass]="{'d-none': savoirTout === true}"><p>- Coordonnées</p><p>- Réseaux Sociaux</p><p>- Portfolio</p><p>- Centres d'intérêts</p><p class="m-0">- Divers</p></div>
+        <div class="card-text text-start text-light mb-0 pb-0" *ngIf="savoirToutMenu === true" [ngClass]="{'d-none': savoirTout === false}"><p>- Coordonnées</p><p>- Réseaux Sociaux</p><p>- Portfolio</p><p>- Centres d'intérêts</p><p class="m-0">- Divers</p></div>
         </div>
     </div>
 </button>
@@ -23,8 +23,8 @@
         <div class="card-img-overlay center">
         <h5 class="card-title text-danger m-0 mirror" *ngIf="tabMenu[0] === false" [ngClass]="{'d-none': tabActive[0] === false}"><img src="/assets/photo.png" alt="Ma pomme" class="w-90"/><p>Coordonnées</p></h5>
         <h5 class="card-title text-danger m-0" *ngIf="tabMenu[0] === false" [ngClass]="{'d-none': tabActive[0] === true}"><img src="/assets/photo.png" alt="Ma pomme" class="w-90"/><p>Coordonnées</p></h5>
-        <div class="card-text text-start text-light mb-0 pb-0 mirror fs-6" *ngIf="tabMenu[0] === true" [ngClass]="{'d-none': tabActive[0] === true}"><p class="text-center fs-5">Andermann Boris</p><p class="text-center">25 rue Séraphin Haulon 64100 Bayonne</p><p class="text-center"><u>Tel</u><br>06.13.78.84.45<br><u>Mail</u><br> andermannboris@yahoo.fr</p></div>
-        <div class="card-text text-start text-light mb-0 pb-0 fs-6" *ngIf="tabMenu[0] === true" [ngClass]="{'d-none': tabActive[0] === false}"><p class="text-center fs-5">Andermann Boris</p><p class="text-center">25 rue Séraphin Haulon 64100 Bayonne</p><p class="text-center"><u>Tel</u><br>06.13.78.84.45<br><u>Mail</u><br> andermannboris@yahoo.fr</p></div>
+        <div class="card-text text-start text-light mb-0 pb-0 mirror fs-6 fs-m" *ngIf="tabMenu[0] === true" [ngClass]="{'d-none': tabActive[0] === true}"><p class="text-center fs-5">Andermann Boris</p><p class="text-center fs-7">25 rue Séraphin Haulon 64100 Bayonne</p><p class="text-center"><u>Tel</u><br>06.13.78.84.45</p><p class="fs-8 text-center"><u class="fs-6">Mail</u><br><a href="mailto:andermannboris@yahoo.fr">andermannboris@yahoo.fr</a></p></div>
+        <div class="card-text text-start text-light mb-0 pb-0 fs-6" *ngIf="tabMenu[0] === true" [ngClass]="{'d-none': tabActive[0] === false}"><p class="text-center fs-5">Andermann Boris</p><p class="text-center fs-7">25 rue Séraphin Haulon 64100 Bayonne</p><p class="text-center"><u>Tel</u><br>06.13.78.84.45<br><u class="fs-6">Mail</u><br><a href="mailto:andermannboris@yahoo.fr">andermannboris@yahoo.fr</a></p></div>
         </div>
     </div> 
 </button>
@@ -68,8 +68,8 @@
         <div class="card-img-overlay center">
         <h5 class="card-title text-danger m-0 mirror" *ngIf="tabMenu[3] === false" [ngClass]="{'d-none': tabActive[3]=== false}"><p>Dix-vers</p></h5>
         <h5 class="card-title text-danger m-0" *ngIf="tabMenu[3] === false" [ngClass]="{'d-none': tabActive[3]=== true}"><p>Dix-vers</p></h5>
-        <div class="card-text text-light mb-0 pb-0 mirror fs-6" *ngIf="tabMenu[3] === true" [ngClass]="{'d-none': tabActive[3]=== true}"><p class="text-start">- Né le 15/02/1972<br>- Permis A<br>- Permis B<br>- Marié 2 enfants<br>Comme un autre AB<br>- Véhicule personnel<br>- Formation SST<br>- Caces 3<br>- Habilitation Électrique</p></div>
-        <div class="card-text text-light mb-0 pb-0 fs-6" *ngIf="tabMenu[3] === true" [ngClass]="{'d-none': tabActive[3]=== false}"><p class="text-start">- Né le 15/02/1972<br>- Permis A<br>- Permis B<br>- Marié 2 enfants<br>Comme un autre AB<br>- Véhicule personnel<br>- Formation SST<br>- Caces 3<br>- Habilitation Électrique</p></div>
+        <div class="card-text text-light mb-0 pb-0 mirror fs-7" *ngIf="tabMenu[3] === true" [ngClass]="{'d-none': tabActive[3]=== true}"><p class="text-start m-0">- Né le 15/02/1972<br>- Permis A<br>- Permis B<br>- Marié 2 enfants<br>Comme un autre AB<br>- Véhicule personnel<br>- Formation SST<br>- Caces 3<br>- Habilitation Électrique</p></div>
+        <div class="card-text text-light mb-0 pb-0 fs-7" *ngIf="tabMenu[3] === true" [ngClass]="{'d-none': tabActive[3]=== false}"><p class="text-start m-0">- Né le 15/02/1972<br>- Permis A<br>- Permis B<br>- Marié 2 enfants<br>Comme un autre AB<br>- Véhicule personnel<br>- Formation SST<br>- Caces 3<br>- Habilitation Électrique</p></div>
         </div>
     </div>
 </button>
@@ -81,8 +81,8 @@
         <div class="card-img-overlay center">
         <h5 class="card-title text-black m-0 mirror" *ngIf="tabMenu[4] === false" [ngClass]="{'d-none': tabActive[4]=== false}"><img src="/assets/Lemmy.jpg" alt="Lemmy" class="w-90"/><p>Centres d'intérêts</p></h5>
         <h5 class="card-title text-black m-0" *ngIf="tabMenu[4] === false" [ngClass]="{'d-none': tabActive[4]=== true}"><img src="/assets/Lemmy.jpg" alt="Lemmy" class="w-90"/><p>Centres d'intérêts</p></h5>
-        <div class="card-text text-light mb-0 pb-0 mirror fs-6" *ngIf="tabMenu[4] === true" [ngClass]="{'d-none': tabActive[4]=== true}"><p class="text-center fs-7">Le gros Rock qui tâche<br>La Guitare électrique<br><br>La Moto <br>même si ma femme veut pas<br><br>Fitness-Musculation<br>Nutrition<br><br>World of Warcraft<br>Elite Dangerous<br>(même si j'ai plus le temps)</div>
-        <div class="card-text text-light mb-0 pb-0 fs-6" *ngIf="tabMenu[4] === true" [ngClass]="{'d-none': tabActive[4]=== false}"><p class="text-center fs-7">Le gros Rock qui tâche<br>La Guitare électrique<br><br>La Moto <br>même si ma femme veut pas<br><br>Fitness-Musculation<br>Nutrition<br><br>World of Warcraft<br>Elite Dangerous<br>(même si j'ai plus le temps)</div>
+        <div class="card-text text-light mb-0 pb-0 mirror text-center fs-7" *ngIf="tabMenu[4] === true" [ngClass]="{'d-none': tabActive[4]=== true}"><p class="text-center m-0 fs-7">Le gros Rock qui tâche<br>La Guitare électrique<br>La Moto<br><span class="fs-8">même si ma femme veut pas</span><br>Fitness-Musculation<br>Nutrition<br>World of Warcraft<br>Elite Dangerous<br><span class="fs-8">(même si j'ai plus le temps)</span></p></div>
+        <div class="card-text text-light mb-0 pb-0 text-center fs-7" *ngIf="tabMenu[4] === true" [ngClass]="{'d-none': tabActive[4]=== false}"><p class="text-center m-0 fs-7">Le gros Rock qui tâche<br>La Guitare électrique<br>La Moto<br><span class="fs-8">même si ma femme veut pas</span><br>Fitness-Musculation<br>Nutrition<br>World of Warcraft<br>Elite Dangerous<br><span class="fs-8">(même si j'ai plus le temps)</span></p></div>
         </div>
     </div>
 </button>

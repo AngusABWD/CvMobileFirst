@@ -7,8 +7,8 @@
         <div class="card-img-overlay center">
         <h5 class="card-title text-black m-0 mirror" *ngIf="savoirFaireMenu === false" [ngClass]="{'d-none': savoirFaire === false}"><p class="mb-4 pt-4">Savoir Faire</p><p class="pt-5">Expériences Professionnelles</p></h5>
         <h5 class="card-title text-black m-0" *ngIf="savoirFaireMenu === false" [ngClass]="{'d-none': savoirFaire === true}"><p class="mb-4 pt-4">Savoir Faire</p><p class="pt-5">Expériences Professionnelles</p></h5>
-        <p class="card-text text-start text-light mb-0 pb-0  mirror" *ngIf="savoirFaireMenu === true" [ngClass]="{'d-none': savoirFaire === true}">- Gérant de société<br><br>- Directeur de magasins<br><br>- Responsable Informatique<br><br>- Chef de rayon</p>
-        <p class="card-text text-start text-light mb-0 pb-0" *ngIf="savoirFaireMenu === true" [ngClass]="{'d-none': savoirFaire === false}">- Gérant de société<br><br>- Directeur de magasins<br><br>- Responsable Informatique<br><br>- Chef de rayon</p>
+        <div class="card-text text-start text-light mb-0 pb-0  mirror" *ngIf="savoirFaireMenu === true" [ngClass]="{'d-none': savoirFaire === true}"><p>- Gérant de société</p><p>- Directeur de magasins</p><p>- Responsable Informatique</p><p class="m-0">- Chef de rayon</p></div>
+        <div class="card-text text-start text-light mb-0 pb-0" *ngIf="savoirFaireMenu === true" [ngClass]="{'d-none': savoirFaire === false}"><p>- Gérant de société</p><p>- Directeur de magasins</p><p>- Responsable Informatique</p><p class="m-0">- Chef de rayon</p></div>
         </div>
     </div>
 </button>
@@ -35,8 +35,8 @@
         <div class="card-img-overlay center">
         <h5 class="card-title text-black m-0 mirror" *ngIf="tabMenu[1] === false" [ngClass]="{'d-none': tabActive[1]=== false}"><p>Directeur de magasin</p><p>( 9 ans )</p></h5>
         <h5 class="card-title text-black m-0" *ngIf="tabMenu[1] === false" [ngClass]="{'d-none': tabActive[1]=== true}"><p>Directeur de magasin</p><p>( 9 ans )</p></h5>
-        <div class="card-text text-light mb-0 pb-0 mirror fs-6" *ngIf="tabMenu[1] === true" [ngClass]="{'d-none': tabActive[1]=== true}"><p class="text-center">Directeur de centre L'Auto Leclerc</p><p class="text-start"> <u>P.B.D :</u> 2020-2021 à Saint-Jean-de-Luz(64)<u><br>S.A.B :</u> de 2014 à 2018 à Biscarrosse(40)</p><p class="text-centre">Magasin Sportswear</p><p class="text-start"><u>Riding Sun :</u> de 2002 à 2006 à Annecy(74)</p></div>
-        <div class="card-text text-light mb-0 pb-0 fs-6" *ngIf="tabMenu[1] === true" [ngClass]="{'d-none': tabActive[1]=== false}"><p class="text-center">Directeur de centre L'Auto Leclerc</p><p class="text-start"> <u>P.B.D :</u> 2020-2021 à Saint-Jean-de-Luz(64)<u><br>S.A.B :</u> de 2014 à 2018 à Biscarrosse(40)</p><p class="text-centre">Magasin Sportswear</p><p class="text-start"><u>Riding Sun :</u> de 2002 à 2006 à Annecy(74)</p></div>
+        <div class="card-text text-light mb-0 pb-0 mirror fs-7" *ngIf="tabMenu[1] === true" [ngClass]="{'d-none': tabActive[1]=== true}"><p class="text-center">Directeur de centre L'Auto Leclerc</p><p class="text-start"> <u>P.B.D :</u> 2020-2021 à Saint-Jean-de-Luz(64)<u><br>S.A.B :</u> de 2014 à 2018 à Biscarrosse(40)</p><p class="text-centre">Magasin Sportswear</p><p class="text-start m-0"><u>Riding Sun :</u> de 2002 à 2006 à Annecy(74)</p></div>
+        <div class="card-text text-light mb-0 pb-0 fs-7" *ngIf="tabMenu[1] === true" [ngClass]="{'d-none': tabActive[1]=== false}"><p class="text-center">Directeur de centre L'Auto Leclerc</p><p class="text-start"> <u>P.B.D :</u> 2020-2021 à Saint-Jean-de-Luz(64)<u><br>S.A.B :</u> de 2014 à 2018 à Biscarrosse(40)</p><p class="text-centre">Magasin Sportswear</p><p class="text-start m-0"><u>Riding Sun :</u> de 2002 à 2006 à Annecy(74)</p></div>
         </div>
     </div>
 </button>
@@ -49,8 +49,8 @@
         <div class="card-img-overlay center">
         <h5 class="card-title text-black m-0 mirror" *ngIf="tabMenu[2] === false" [ngClass]="{'d-none': tabActive[2]=== false}"><p>Responsable Informatique</p><p>( 6 ans )</p></h5>
         <h5 class="card-title text-black m-0" *ngIf="tabMenu[2] === false" [ngClass]="{'d-none': tabActive[2]=== true}"><p>Responsable Informatique</p><p>( 6 ans )</p></h5>
-        <div class="card-text text-light mb-0 pb-0 mirror fs-6" *ngIf="tabMenu[2] === true" [ngClass]="{'d-none': tabActive[2]=== true}"><p class="text-center">C.I.M</p><p class="text-start"> <u>S.A.B :</u> de 2012 à 2018 à Biscarrosse(40)</p><p class="text-start fs-7">Responsable de la gestion du parc informatique et télécom, formation des utilisateurs, administration réseau, recherche et résolution de pannes, sur les 5 sites de la société SAB. </p></div>
-        <div class="card-text text-light mb-0 pb-0 fs-6" *ngIf="tabMenu[2] === true" [ngClass]="{'d-none': tabActive[2]=== false}"><p class="text-center">C.I.M</p><p class="text-start"> <u>S.A.B :</u> de 2012 à 2018 à Biscarrosse(40)</p><p class="text-start fs-7">Responsable de la gestion du parc informatique et télécom, formation des utilisateurs, administration réseau, recherche et résolution de pannes, sur les 5 sites de la société SAB. </p></div>
+        <div class="card-text text-light mb-0 pb-0 mirror fs-6" *ngIf="tabMenu[2] === true" [ngClass]="{'d-none': tabActive[2]=== true}"><p class="text-center">C.I.M</p><p class="text-start fs-7"> <u>S.A.B :</u> de 2012 à 2018 à Biscarrosse(40)</p><p class="text-center fs-8 m-0">Responsable de la gestion du parc informatique et télécom, formation des utilisateurs, administration réseau, recherche et résolution de pannes, sur les 5 sites de la société SAB. </p></div>
+        <div class="card-text text-light mb-0 pb-0 fs-6" *ngIf="tabMenu[2] === true" [ngClass]="{'d-none': tabActive[2]=== false}"><p class="text-center">C.I.M</p><p class="text-start fs-7"> <u>S.A.B :</u> de 2012 à 2018 à Biscarrosse(40)</p><p class="text-center fs-8 m-0">Responsable de la gestion du parc informatique et télécom, formation des utilisateurs, administration réseau, recherche et résolution de pannes, sur les 5 sites de la société SAB. </p></div>
         </div>
     </div>
 </button>
@@ -63,8 +63,8 @@
         <div class="card-img-overlay center">
         <h5 class="card-title text-black m-0 mirror" *ngIf="tabMenu[3] === false" [ngClass]="{'d-none': tabActive[3]=== false}"><p>Chef de rayon</p><p>( 12 ans )</p></h5>
         <h5 class="card-title text-black m-0" *ngIf="tabMenu[3] === false" [ngClass]="{'d-none': tabActive[3]=== true}"><p>Chef de rayon</p><p>( 12 ans )</p></h5>
-        <div class="card-text text-light mb-0 pb-0 mirror fs-6" *ngIf="tabMenu[3] === true" [ngClass]="{'d-none': tabActive[3]=== true}"><p class="text-center">Chef de Secteur Textile</p><p class="text-start fs-7"> <u>S.A.B :</u>Hypermarché E.Leclerc de 2010 à 2014 à Biscarrosse(40)</p><p class="text-center">Store Manager</p><p class="text-start fs-7"> <u>C.E.F :</u>Grossiste en matériel électrique de 1994 à 2002 à Annecy(74)</p></div>
-        <div class="card-text text-light mb-0 pb-0 fs-6" *ngIf="tabMenu[3] === true" [ngClass]="{'d-none': tabActive[3]=== false}"><p class="text-center">Chef de Secteur Textile</p><p class="text-start fs-7"> <u>S.A.B :</u>Hypermarché E.Leclerc de 2010 à 2014 à Biscarrosse(40)</p><p class="text-center">Store Manager</p><p class="text-start fs-7"> <u>C.E.F :</u>Grossiste en matériel électrique de 1994 à 2002 à Annecy(74)</p></div>
+        <div class="card-text text-light mb-0 pb-0 mirror fs-6" *ngIf="tabMenu[3] === true" [ngClass]="{'d-none': tabActive[3]=== true}"><p class="text-center">Chef de Secteur Textile</p><p class="text-start fs-7"> <u>S.A.B :</u>Hypermarché E.Leclerc de 2010 à 2014 à Biscarrosse(40)</p><p class="text-center">Store Manager</p><p class="text-start fs-7 m-0"> <u>C.E.F :</u>Grossiste en matériel électrique de 1994 à 2002 à Annecy(74)</p></div>
+        <div class="card-text text-light mb-0 pb-0 fs-6" *ngIf="tabMenu[3] === true" [ngClass]="{'d-none': tabActive[3]=== false}"><p class="text-center">Chef de Secteur Textile</p><p class="text-start fs-7"> <u>S.A.B :</u>Hypermarché E.Leclerc de 2010 à 2014 à Biscarrosse(40)</p><p class="text-center">Store Manager</p><p class="text-start fs-7 m-0"> <u>C.E.F :</u>Grossiste en matériel électrique de 1994 à 2002 à Annecy(74)</p></div>
         </div>
     </div>
 </button>
