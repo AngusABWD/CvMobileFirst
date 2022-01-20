@@ -16,12 +16,14 @@
     color: #4169E1;
 }
 .h-card {
+	color: transparent;
     height: 300px;
 	@media screen and (min-width: 992px) { 
 		&:hover {
 			transform: scale(1.05);
 			transition-duration: 300ms;
 			box-shadow: black -10px 10px 10px;
+			color: lightslategrey;
 		}
 	}
 }
@@ -91,4 +93,7 @@
 }
 .fs-7 {
 	font-size: 14px;
+}
+.fs-8 {
+	font-size: 13px;
 }
