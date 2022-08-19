@@ -8,8 +8,8 @@
         <div class="card-img-overlay center">
         <h5 class="card-title m-0 mirror" *ngIf="savoirEtreMenu === false" [ngClass]="{'d-none': savoirEtre === false}"><p class="mb-3 pt-5 text-danger">Savoir Être</p><p class="pt-5 text-danger">Compétences Professionnelles</p><p class="fs-8 m-0 p-0">Cliquez pour retourner</p></h5>
         <h5 class="card-title m-0" *ngIf="savoirEtreMenu === false" [ngClass]="{'d-none': savoirEtre === true}"><p class="mb-3 pt-5 text-danger">Savoir Être</p><p class="pt-5 text-danger">Compétences Professionnelles</p><p class="fs-8 m-0 p-0">Cliquez pour retourner</p></h5>
-        <p class="card-text text-start text-light mb-0 pb-0  mirror" *ngIf="savoirEtreMenu === true" [ngClass]="{'d-none': savoirEtre === true}">- Soft Skills<br><br>- Gestion de projet<br><br>- Management<br><br>- Commerciale</p>
-        <p class="card-text text-start text-light mb-0 pb-0" *ngIf="savoirEtreMenu === true" [ngClass]="{'d-none': savoirEtre === false}">- Soft Skills<br><br>- Gestion de projet<br><br>- Management<br><br>- Commerciale</p>
+        <p class="card-text text-start text-light mb-0 pb-0  mirror" *ngIf="savoirEtreMenu === true" [ngClass]="{'d-none': savoirEtre === true}">- Soft Skills<br><br>- Gestion de projet<br><br>- Management<br><br>- Commerciales</p>
+        <p class="card-text text-start text-light mb-0 pb-0" *ngIf="savoirEtreMenu === true" [ngClass]="{'d-none': savoirEtre === false}">- Soft Skills<br><br>- Gestion de projet<br><br>- Management<br><br>- Commerciales</p>
         </div>
     </div>
 </button>
@@ -66,8 +66,8 @@
         <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[3] === false || tabActive[3] === false}" >
         <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[3] === false || tabActive[3] === true}" >
         <div class="card-img-overlay center">
-        <h5 class="card-title m-0 mirror" *ngIf="tabMenu[3] === false" [ngClass]="{'d-none': tabActive[3]=== false}"><p class=" text-danger mt-4">Commerciale</p><img src="/assets/commerce.jpg" alt="logo Commerce"/><p class=" text-danger">( 27 ans )</p><p class="fs-8 m-0 p-0">Cliquez pour retourner</p></h5>
-        <h5 class="card-title m-0" *ngIf="tabMenu[3] === false" [ngClass]="{'d-none': tabActive[3]=== true}"><p class=" text-danger mt-4">Commerciale</p><img src="/assets/commerce.jpg" alt="logo Commerce"/><p class=" text-danger">( 27 ans )</p><p class="fs-8 m-0 p-0">Cliquez pour retourner</p></h5>
+        <h5 class="card-title m-0 mirror" *ngIf="tabMenu[3] === false" [ngClass]="{'d-none': tabActive[3]=== false}"><p class=" text-danger mt-4">Commerciales</p><img src="/assets/commerce.jpg" alt="logo Commerce"/><p class=" text-danger">( 27 ans )</p><p class="fs-8 m-0 p-0">Cliquez pour retourner</p></h5>
+        <h5 class="card-title m-0" *ngIf="tabMenu[3] === false" [ngClass]="{'d-none': tabActive[3]=== true}"><p class=" text-danger mt-4">Commerciales</p><img src="/assets/commerce.jpg" alt="logo Commerce"/><p class=" text-danger">( 27 ans )</p><p class="fs-8 m-0 p-0">Cliquez pour retourner</p></h5>
         <div class="card-text text-light mb-0 pb-0 mirror fs-7" *ngIf="tabMenu[3] === true" [ngClass]="{'d-none': tabActive[3]=== true}"><p class="text-start m-0">- Analyser les besoins du client<br>- Etablir un cahier des charges<br>- Argumentaire ventes<br>- Négociation achats<br>- Devis / factures / encaissements<br>- Suivre un portefeuille client<br>- Merchandising</p></div>
         <div class="card-text text-light mb-0 pb-0 fs-7" *ngIf="tabMenu[3] === true" [ngClass]="{'d-none': tabActive[3]=== false}"><p class="text-start m-0">- Analyser les besoins du client<br>- Etablir un cahier des charges<br>- Argumentaire ventes<br>- Négociation achats<br>- Devis / factures / encaissements<br>- Suivre un portefeuille client<br>- Merchandising</p></div>
         </div>
