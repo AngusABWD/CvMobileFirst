@@ -11,30 +11,35 @@ export class PiqueComponent implements OnInit {
   savoirShowActive2: boolean = false;
   savoirShowActive3: boolean = false;
   savoirShowActive4: boolean = false;
+  savoirShowActive5: boolean = false;
   savoir: boolean = true;
   savoirActive1: boolean = true;
   savoirActive2: boolean = true;
   savoirActive3: boolean = true;
   savoirActive4: boolean = true;
+  savoirActive5: boolean = true;
   rotateSavoir: any = undefined;
   rotateSavoirActive1: any = undefined;
   rotateSavoirActive2: any = undefined;
   rotateSavoirActive3: any = undefined;
   rotateSavoirActive4: any = undefined;
+  rotateSavoirActive5: any = undefined;
   savoirMenu: boolean = false;
   savoirMenuActive1: boolean = true;
   savoirMenuActive2: boolean = true;
   savoirMenuActive3: boolean = true;
   savoirMenuActive4: boolean = true;
+  savoirMenuActive5: boolean = true;
+
 
   constructor() { }
 
   ngOnInit(): void {
   }
-  tabShow: Array<boolean> = [this.savoirShowActive1, this.savoirShowActive2, this.savoirShowActive3, this.savoirShowActive4];
-  tabMenu: Array<boolean> = [this.savoirMenuActive1, this.savoirMenuActive2, this.savoirMenuActive3, this.savoirMenuActive4];
-  tabActive: Array<boolean> = [this.savoirActive1, this.savoirActive2, this.savoirActive3, this.savoirActive4];
-  tabRotate: Array<any> = [this.rotateSavoirActive1, this.rotateSavoirActive2, this.rotateSavoirActive3, this.rotateSavoirActive4];
+  tabShow: Array<boolean> = [this.savoirShowActive1, this.savoirShowActive2, this.savoirShowActive3, this.savoirShowActive4, this.savoirShowActive5];
+  tabMenu: Array<boolean> = [this.savoirMenuActive1, this.savoirMenuActive2, this.savoirMenuActive3, this.savoirMenuActive4, this.savoirMenuActive5];
+  tabActive: Array<boolean> = [this.savoirActive1, this.savoirActive2, this.savoirActive3, this.savoirActive4, this.savoirActive5];
+  tabRotate: Array<any> = [this.rotateSavoirActive1, this.rotateSavoirActive2, this.rotateSavoirActive3, this.rotateSavoirActive4, this.rotateSavoirActive5];
 
   //Fonction intégrée permettant les affichages et rotations des cartes
   savoirActiveTrue() {
@@ -154,6 +159,20 @@ export class PiqueComponent implements OnInit {
       this.tabRotate[3] = true;
       setTimeout(()=>{
       this.tabMenu[3] = false }, 500);
+    }
+  }
+  onSavoirActive5() {
+    if ( this.tabActive[4] ) {
+    this.tabActive[4] = false;
+    this.tabRotate[4] = false;  
+    setTimeout(()=>{
+    this.tabMenu[4] = true; }, 500);
+    }
+    else {
+      this.tabActive[4] = true;
+      this.tabRotate[4] = true;
+      setTimeout(()=>{
+      this.tabMenu[4] = false }, 500);
     }
   }
 }

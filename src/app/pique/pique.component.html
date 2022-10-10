@@ -23,8 +23,8 @@
         <div class="card-img-overlay center">
         <h5 class="card-title m-0 mirror" *ngIf="tabMenu[0] === false" [ngClass]="{'d-none': tabActive[0] === false}"><p class="text-black mt-4">Langages</p><img class="m-1" src="/assets/html.png" alt="logo html"/><img class="m-1" src="/assets/Sass.png" alt="logo Sass"/><br><img class="m-1" src="/assets/JS.png" alt="logo JavaScript"/><img class="m-1" src="/assets/jQuery.png" alt="logo jQuery"/><img class="m-1" src="/assets/typeScript.png" alt="logo TypeScript"/><br><img class="m-1" src="/assets/php.png" alt="logo PHP"/><img class="m-1" src="/assets/sql.jpg" alt="logo SQL"/><br><img class="m-1" src="/assets/twig.png" alt="logo Twig"/><img class="m-1" src="/assets/Python.png" alt="logo Phython"/><p class="fs-8 m-0 p-0">Cliquez pour retourner</p></h5>
         <h5 class="card-title m-0" *ngIf="tabMenu[0] === false" [ngClass]="{'d-none': tabActive[0] === true}"><p class="text-black mt-4">Langages</p><img class="m-1" src="/assets/html.png" alt="logo html"/><img class="m-1" src="/assets/Sass.png" alt="logo Sass"/><br><img class="m-1" src="/assets/JS.png" alt="logo JavaScript"/><img class="m-1" src="/assets/jQuery.png" alt="logo jQuery"/><img class="m-1" src="/assets/typeScript.png" alt="logo TypeScript"/><br><img class="m-1" src="/assets/php.png" alt="logo PHP"/><img class="m-1" src="/assets/sql.jpg" alt="logo SQL"/><br><img class="m-1" src="/assets/twig.png" alt="logo Twig"/><img class="m-1" src="/assets/Python.png" alt="logo Phython"/><p class="fs-8 m-0 p-0">Cliquez pour retourner</p></h5>
-        <div class="card-text text-light mb-0 pb-0 mirror fs-6" *ngIf="tabMenu[0] === true" [ngClass]="{'d-none': tabActive[0]=== true}"><p class="text-start">- HTML-5<br>- Twig<br>- CSS-3<br>- SCSS / SASS<br>- JavaScript / jQuery<br>- TypeScript<br>- Pyhton (Bases)<br>- PHP<br>- SQL</p></div>
-        <div class="card-text text-light mb-0 pb-0 fs-6" *ngIf="tabMenu[0] === true" [ngClass]="{'d-none': tabActive[0]=== false}"><p class="text-start">- HTML-5<br>- Twig<br>- CSS-3<br>- SCSS / SASS<br>- JavaScript / jQuery<br>- TypeScript<br>- Pyhton (Bases)<br>- PHP<br>- SQL</p></div>
+        <div class="card-text text-light mb-0 pb-0 mirror fs-6" *ngIf="tabMenu[0] === true" [ngClass]="{'d-none': tabActive[0]=== true}"><p class="text-start">- HTML-5<br>- Twig<br>- CSS-3<br>- SCSS / SASS<br>- JavaScript / jQuery<br>- TypeScript<br>- Pyhton (Bases)<br>- PHP<br>- SQL<br>- C#</p></div>
+        <div class="card-text text-light mb-0 pb-0 fs-6" *ngIf="tabMenu[0] === true" [ngClass]="{'d-none': tabActive[0]=== false}"><p class="text-start">- HTML-5<br>- Twig<br>- CSS-3<br>- SCSS / SASS<br>- JavaScript / jQuery<br>- TypeScript<br>- Pyhton (Bases)<br>- PHP<br>- SQL<br>- C#</p></div>
         </div>
     </div> 
 </button>
@@ -43,7 +43,7 @@
         </div>
     </div>
 </button>
-<!--Carte "Formations"-->
+<!--Carte ".Net"-->
 <button class="card-button m-3" (click)="onSavoirActive3()" *ngIf="tabShow[2] === true" [ngClass]="{'rotateIn': tabRotate[2] === true, 'rotateStart': tabRotate[2] === undefined,'rotateOut': tabRotate[2] === false }" >
     <div class="card h-card card-border">
         <img src="/assets/valetPique.png" alt="As de Pique savoir " class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[2] === true || tabActive[2]=== false}" >
@@ -51,14 +51,14 @@
         <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[2] === false || tabActive[2] === false}" >
         <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[2] === false || tabActive[2] === true}" >
         <div class="card-img-overlay center">
-        <h5 class="card-title m-0 mirror" *ngIf="tabMenu[2] === false" [ngClass]="{'d-none': tabActive[2]=== false}"><p class="text-black mt-4">Formations</p><img class="m-1" src="/assets/openCR.jpg" alt="logo OpenClassRooms"/><img class="m-1" src="/assets/Afpa.jpg" alt="logo Afpa"/><p class="fs-8 m-0 p-0">Cliquez pour retourner</p></h5>
-        <h5 class="card-title m-0" *ngIf="tabMenu[2] === false" [ngClass]="{'d-none': tabActive[2]=== true}"><p class="text-black mt-4">Formations</p><img class="m-1" src="/assets/openCR.jpg" alt="logo OpenClassRooms"/><img class="m-1" src="/assets/Afpa.jpg" alt="logo Afpa"/><p class="fs-8 m-0 p-0">Cliquez pour retourner</p></h5>
-        <div class="card-text text-light mb-0 pb-0 mirror fs-6" *ngIf="tabMenu[2] === true" [ngClass]="{'d-none': tabActive[2]=== true}"><p class="text-center fs-8">Développeur Web et Web mobile ( anglais renforcé )<br><u>AFPA Territoire Digital</u> (2021-2022)</p><p class="text-center fs-8">MOOC<br><u>OpenClassRooms</u><br>(2021-2022)<br><a href="https://www.linkedin.com/in/boris-andermann-122086219/" title="Linkedin Rubrique Licences et Certifications" target="_plank" >Liste des certificats</a></p><p class="text-center m-0 fs-8">BTS Domotique<br><u>Lycée Bellevue Lyon</u> (1992-1994)</p></div>
-        <div class="card-text text-light mb-0 pb-0 fs-6" *ngIf="tabMenu[2] === true" [ngClass]="{'d-none': tabActive[2]=== false}"><p class="text-center fs-8">Développeur Web et Web mobile ( anglais renforcé )<br><u>AFPA Territoire Digital</u> (2021-2022)</p><p class="text-center fs-8">MOOC<br><u>OpenClassRooms</u><br>(2021-2022)<br><a href="https://www.linkedin.com/in/boris-andermann-122086219/" title="Linkedin Rubrique Licences et Certifications" target="_plank" >Liste des certificats</a></p><p class="text-center m-0 fs-8">BTS Domotique<br><u>Lycée Bellevue Lyon</u> (1992-1994)</p></div>
+        <h5 class="card-title m-0 mirror" *ngIf="tabMenu[2] === false" [ngClass]="{'d-none': tabActive[2]=== false}"><p class="text-black mt-4">.NET</p><img class="m-1" src="/assets/NET.png" alt="logo .NET"/><img class="m-1" src="/assets/Csharp.png" alt="logo Csharp"/><img class="m-1" src="/assets/SQLServer.png" alt="logo SQLServer"/><img class="m-1" src="/assets/NET.jpg" alt="logo ADO.NET"/><img class="m-1" src="/assets/asp1.png" alt="logo ASP.NET"/><img class="m-1" src="/assets/entity-f.jpg" alt="logo Entity Framework"/><img class="m-1" src="/assets/wpf.png" alt="logo WPF"/><img class="m-1" src="/assets/rest.png" alt="logo REST API"/><p class="fs-8 m-0 p-0">Cliquez pour retourner</p></h5>
+        <h5 class="card-title m-0" *ngIf="tabMenu[2] === false" [ngClass]="{'d-none': tabActive[2]=== true}"><p class="text-black mt-4">.NET</p><img class="m-1" src="/assets/NET.png" alt="logo .NET"/><img class="m-1" src="/assets/Csharp.png" alt="logo Csharp"/><img class="m-1" src="/assets/SQLServer.png" alt="logo SQLServer"/><img class="m-1" src="/assets/NET.jpg" alt="logo ADO.NET"/><img class="m-1" src="/assets/asp1.png" alt="logo ASP.NET"/><img class="m-1" src="/assets/entity-f.jpg" alt="logo Entity Framework"/><img class="m-1" src="/assets/wpf.png" alt="logo WPF"/><img class="m-1" src="/assets/rest.png" alt="logo REST API"/><p class="fs-8 m-0 p-0">Cliquez pour retourner</p></h5>
+        <div class="card-text text-light mb-0 pb-0 mirror fs-6" *ngIf="tabMenu[2] === true" [ngClass]="{'d-none': tabActive[2]=== true}"><p class="text-start m-0">- Framework .NET<br>- C#<br>- SQL Server<br>- ADO.NET<br>- Entity Framework<br>- ASP.NET Core<br>- WPF<br>- Web services REST</p></div>
+        <div class="card-text text-light mb-0 pb-0 fs-6" *ngIf="tabMenu[2] === true" [ngClass]="{'d-none': tabActive[2]=== false}"><p class="text-start m-0">- Framework .NET<br>- C#<br>- SQL Server<br>- ADO.NET<br>- Entity Framework<br>- ASP.NET Core<br>- WPF<br>- Web services REST</p></div>
         </div>
     </div>
 </button>
-<!--Carte "Diplôme"-->
+<!--Carte "Formations"-->
 <button class="card-button m-3" (click)="onSavoirActive4()" *ngIf="tabShow[3] === true" [ngClass]="{'rotateIn': tabRotate[3] === true, 'rotateStart': tabRotate[3] === undefined,'rotateOut': tabRotate[3] === false }" >
     <div class="card h-card card-border">
         <img src="/assets/dixPique.png" alt="As de Pique savoir " class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[3] === true || tabActive[3]=== false}" >
@@ -66,11 +66,27 @@
         <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[3] === false || tabActive[3] === false}" >
         <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[3] === false || tabActive[3] === true}" >
         <div class="card-img-overlay center">
-        <h5 class="card-title m-0 mirror" *ngIf="tabMenu[3] === false" [ngClass]="{'d-none': tabActive[3]=== false}"><p class="text-black mt-4">Diplômes</p><img class="m-1" src="/assets/diplome.jpg" alt="logo Diplôme"/><p class="fs-8 m-0 p-0">Cliquez pour retourner</p></h5>
-        <h5 class="card-title m-0" *ngIf="tabMenu[3] === false" [ngClass]="{'d-none': tabActive[3]=== true}"><p class="text-black mt-4">Diplômes</p><img class="m-1" src="/assets/diplome.jpg" alt="logo Diplôme"/><p class="fs-8 m-0 p-0">Cliquez pour retourner</p></h5>
-        <p class="card-text text-center text-light mb-0 pb-0 mirror fs-6" *ngIf="tabMenu[3] === true" [ngClass]="{'d-none': tabActive[3] === true}">Titre Professionnel<br>de niveau V<br>DevWeb WebMobile<br><br>BTS DOMOTIQUE<br><a href="/assets/BTSdomotique300.pdf" title="BTS Domotique" target="_plank">Diplôme</a><br><br>BACCALAUREAT C<br><a href="/assets/BACC.pdf" title="Baccalauréat C" target="_plank">Diplôme</a></p>
-        <p class="card-text text-center text-light mb-0 pb-0 fs-6" *ngIf="tabMenu[3] === true" [ngClass]="{'d-none': tabActive[3] === false}">Titre Professionnel<br>de niveau V<br>DevWeb WebMobile<br><br>BTS DOMOTIQUE<br><a href="/assets/BTSdomotique300.pdf" title="BTS Domotique" target="_plank">Diplôme</a><br><br>BACCALAUREAT C<br><a href="/assets/BACC.pdf" title="Baccalauréat C" target="_plank">Diplôme</a></p>        
+        <h5 class="card-title m-0 mirror" *ngIf="tabMenu[3] === false" [ngClass]="{'d-none': tabActive[3]=== false}"><p class="text-black mt-4">Formations</p><img class="m-1" src="/assets/openCR.jpg" alt="logo OpenClassRooms"/><img class="m-1" src="/assets/Afpa.jpg" alt="logo Afpa"/><img class="m-1" src="/assets/Dawan.png" alt="logo Dawan"/><p class="fs-8 m-0 p-0">Cliquez pour retourner</p></h5>
+        <h5 class="card-title m-0" *ngIf="tabMenu[3] === false" [ngClass]="{'d-none': tabActive[3]=== true}"><p class="text-black mt-4">Formations</p><img class="m-1" src="/assets/openCR.jpg" alt="logo OpenClassRooms"/><img class="m-1" src="/assets/Afpa.jpg" alt="logo Afpa"/><img class="m-1" src="/assets/Dawan.png" alt="logo Dawan"/><p class="fs-8 m-0 p-0">Cliquez pour retourner</p></h5>
+        <div class="card-text text-light mb-0 pb-0 mirror fs-6" *ngIf="tabMenu[3] === true" [ngClass]="{'d-none': tabActive[3]=== true}"><p class="text-center fs-8">Développeur .NET<br><u>Dawan</u><br>(2022)</p><p class="text-center fs-8">Développeur Web et Web mobile ( anglais renforcé )<br><u>AFPA Territoire Digital</u> (2021-2022)</p><p class="text-center fs-8">MOOC<br><u>OpenClassRooms</u><br>(2021-2022)<br><a href="https://www.linkedin.com/in/boris-andermann-122086219/" title="Linkedin Rubrique Licences et Certifications" target="_plank" >Liste des certificats</a></p></div>
+        <div class="card-text text-light mb-0 pb-0 fs-6" *ngIf="tabMenu[3] === true" [ngClass]="{'d-none': tabActive[3]=== false}"><p class="text-center fs-8">Développeur .NET<br><u>Dawan</u><br>(2022)</p><p class="text-center fs-8">Développeur Web et Web mobile ( anglais renforcé )<br><u>AFPA Territoire Digital</u> (2021-2022)</p><p class="text-center fs-8">MOOC<br><u>OpenClassRooms</u><br>(2021-2022)<br><a href="https://www.linkedin.com/in/boris-andermann-122086219/" title="Linkedin Rubrique Licences et Certifications" target="_plank" >Liste des certificats</a></p></div>
         </div>
     </div>
 </button>
+<!--Carte "Diplôme"-->
+<button class="card-button m-3" (click)="onSavoirActive5()" *ngIf="tabShow[4] === true" [ngClass]="{'rotateIn': tabRotate[4] === true, 'rotateStart': tabRotate[4] === undefined,'rotateOut': tabRotate[4] === false }" >
+    <div class="card h-card card-border" [ngClass]="{'bg-black': tabMenu[4] === true}">
+        <img src="/assets/joker.png" alt="As de Pique Savoir Menu" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[4] === true || tabActive[4]=== false}" >
+        <img src="/assets/joker.png" alt="As de Pique Savoir Menu" class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[4] === true || tabActive[4]=== true}" >
+        <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 mirror" [ngClass]="{'d-none': tabMenu[4] === false || tabActive[4] === false}" >
+        <img src="/assets/fond.png" alt="Dos de carte" class="card-img h-100 w-100 " [ngClass]="{'d-none': tabMenu[4] === false || tabActive[4] === true}" >
+        <div class="card-img-overlay center">
+        <h5 class="card-title m-0 mirror" *ngIf="tabMenu[4] === false" [ngClass]="{'d-none': tabActive[4]=== false}"><p class="text-black mt-4">Diplômes</p><img class="m-1" src="/assets/diplome.jpg" alt="logo Diplôme"/><p class="fs-8 m-0 p-0">Cliquez pour retourner</p></h5>
+        <h5 class="card-title m-0" *ngIf="tabMenu[4] === false" [ngClass]="{'d-none': tabActive[4]=== true}"><p class="text-black mt-4">Diplômes</p><img class="m-1" src="/assets/diplome.jpg" alt="logo Diplôme"/><p class="fs-8 m-0 p-0">Cliquez pour retourner</p></h5>
+        <p class="card-text text-center text-light mb-0 pb-0 mirror fs-6" *ngIf="tabMenu[4] === true" [ngClass]="{'d-none': tabActive[4] === true}">Titre Professionnel<br>de niveau V<br>DevWeb WebMobile<br><br>BTS DOMOTIQUE<br><a href="/assets/BTSdomotique300.pdf" title="BTS Domotique" target="_plank">Diplôme</a><br><br>BACCALAUREAT C<br><a href="/assets/BACC.pdf" title="Baccalauréat C" target="_plank">Diplôme</a></p>
+        <p class="card-text text-center text-light mb-0 pb-0 fs-6" *ngIf="tabMenu[4] === true" [ngClass]="{'d-none': tabActive[4] === false}">Titre Professionnel<br>de niveau V<br>DevWeb WebMobile<br><br>BTS DOMOTIQUE<br><a href="/assets/BTSdomotique300.pdf" title="BTS Domotique" target="_plank">Diplôme</a><br><br>BACCALAUREAT C<br><a href="/assets/BACC.pdf" title="Baccalauréat C" target="_plank">Diplôme</a></p>   
+        </div>
+    </div>
+</button>
+
 
