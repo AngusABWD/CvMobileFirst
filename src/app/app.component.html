@@ -6,29 +6,35 @@
               <div class="center bg-fond ">
                 <!--Barre de navigation avec ajout d'un bouton pour Mobile-->
                   <nav class="col navbar justify-content-around navbar-dark p-0">
-                      <a class="navbar-brand me-4 mt-3 mb-md-3 me-md-5 brandWidth" href="http://www.abwd.fr" title="www.abwd.fr"><img class="logoMenu" src="/assets/angus.png" alt="logo angus abwd"/></a>
+                      <a class="navbar-brand me-4 mt-3 mb-md-3 me-md-5 brandWidth" href="http://www.abwd.fr" title="www.abwd.fr"><img class="logoMenu" src="/assets/angus.svg" alt="logo angus abwd"/></a>
                       <h1 class="text-white text-center h2  pt-3 pt-md-0 pe-1 pe-md-0 ms-md-5 shadowText">CV Andermann Boris<br><span class="h4"><em>Développeur Web</em></span></h1>
                       <button class="navbar-toggler me-4 my-3 d-lg-none" type="button" data-toggle="collapse" (click)="onCollapse()" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
                       </button>
                       <h2 class="blue-light text-center h3 ms-2 shadowText">Les cartes pour réussir</h2>
-                      <a class="h6 d-none d-lg-block blue-light pcredits" href="#" (click)="onCredits()">Crédits</a>
+                      <div>
+                        <a class="h6 d-none d-lg-block blue-light pcredits shadowText mt-4" href="#" (click)="onPrint()">Imprimer</a>
+                        <a class="h6 d-none d-lg-block blue-light pcredits shadowText" href="#" (click)="onCredits()">Crédits</a>
+                      </div>
                       <div id="navbarContent" class="navbar-collapse" [ngClass]="{'collapse': collapseMenu === true}">
                           <ul class="navbar-nav blue-light">
-                              <li class="nav-item h5 d-lg-none center bg-menu py-2 m-0" >
-                                <a class="nav-link p-0 text-white" (click)="onCollapse()" (click)="onSavoirShow()"><img class="logoCarte mx-3" src="/assets/pique.png" alt="Pique"/>Savoir</a>
+                              <li class="nav-item h5 d-lg-none bg-menu py-2 m-0" >
+                                <a class="nav-link p-0 text-white" href="#" (click)="onCollapse()" (click)="onSavoirShow()"><img class="logoCarte mx-3" src="/assets/pique.png" alt="Pique"/>Savoir</a>
                               </li>          
-                              <li class="nav-item h5 d-lg-none center bg-menu  py-2 m-0" >
-                                <a class="nav-link p-0 text-white" (click)="onCollapse()" (click)="onSavoirEtreShow()"><img class="logoCarte mx-3" src="/assets/coeur.png" alt="Coeur"/>Savoir-être</a>
+                              <li class="nav-item h5 d-lg-none bg-menu  py-2 m-0" >
+                                <a class="nav-link p-0 text-white" href="#" (click)="onCollapse()" (click)="onSavoirEtreShow()"><img class="logoCarte mx-3" src="/assets/coeur.png" alt="Coeur"/>Savoir-être</a>
                               </li>
-                              <li class="nav-item h5 d-lg-none center bg-menu  py-2 m-0">
-                                <a class="nav-link p-0 text-white" (click)="onCollapse()" (click)="onSavoirFaireShow()"><img class="logoCarte mx-3" src="/assets/trefle.png" alt="Trefle"/>Savoir-faire</a>
+                              <li class="nav-item h5 d-lg-none bg-menu  py-2 m-0">
+                                <a class="nav-link p-0 text-white" href="#" (click)="onCollapse()" (click)="onSavoirFaireShow()"><img class="logoCarte mx-3" src="/assets/trefle.png" alt="Trefle"/>Savoir-faire</a>
                               </li>     
-                              <li class="nav-item h5 d-lg-none center bg-menu py-2 m-0" >
-                                <a class="nav-link p-0 text-white" (click)="onCollapse()" (click)="onToutSavoirShow()"><img class="logoCarte mx-3" src="/assets/carreau.png" alt="Carreau"/>Tout-savoir</a>
+                              <li class="nav-item h5 d-lg-none bg-menu py-2 m-0" >
+                                <a class="nav-link p-0 text-white" href="#" (click)="onCollapse()" (click)="onToutSavoirShow()"><img class="logoCarte mx-3" src="/assets/carreau.png" alt="Carreau"/>Tout-savoir</a>
                               </li>
-                              <li class="nav-item h6 d-lg-none center bg-menu py-2 m-0" >
-                                <a class="nav-link p-0 text-white" (click)="onCollapse()" (click)="onCredits()">Crédits</a>
+                              <li class="nav-item h6 d-lg-none center bg-menu py-2 px-0 m-0" >
+                                <a class="nav-link p-0 text-white" href="#" (click)="onCollapse()" (click)="onCredits()">Crédits</a>
+                              </li>
+                              <li class="nav-item h6 d-lg-none center bg-menu py-2 px-0 m-0" >
+                                <a class="nav-link p-0 text-white" href="#" (click)="onPrint()" (click)="onCredits()">Imprimer</a>
                               </li>
                           </ul>
                       </div>
@@ -40,7 +46,7 @@
       <div class="row mt-5 mt-lg-0" *ngIf="collapseMenu === true && ( savoirFaireShow === false && savoirEtreShow === false && savoirShow === false && toutSavoirShow === false && creditsShow === false )" >
         <div class="col center">
             <button class="ms-3 my-3 d-lg-none imageMenu" (click)="onCollapse()" [ngClass]="{ 'fade': fade === true }">
-                <img src="/assets/4as.png" alt="quatre as à choisir"/>
+                <img src="/assets/4as.svg" alt="quatre as à choisir"/>
             </button>   
         </div>
         <p class="text-center h3 blue-light shadowText d-lg-none">Choisissez une carte<br>Cliquez dessus<br>pour la retourner</p>
@@ -48,19 +54,19 @@
       <div class="row mx-lg-5">
         <!--Composants : 1 colonne par couleur ou 1 couleur sur mobile-->
           <div class="col-12 col-lg-3 text-center">
-            <app-pique id="pique" [ngClass]="{'d-none': savoirShow === false, 'fade': fade === true, 'd-lg-block': creditsShow === false }"></app-pique>
+            <app-pique [ngClass]="{'d-none': savoirShow === false, 'fade': fade === true, 'd-lg-block': creditsShow === false }"></app-pique>
           </div>
           <div class="col-12 col-lg-3 text-center">
-            <app-coeur id="coeur" [ngClass]="{'d-none': savoirEtreShow === false, 'fade': fade === true, 'd-lg-block': creditsShow === false }"></app-coeur>
+            <app-coeur [ngClass]="{'d-none': savoirEtreShow === false, 'fade': fade === true, 'd-lg-block': creditsShow === false }"></app-coeur>
           </div>
           <div class="col-12 col-lg-3 text-center">
-            <app-trefle id="trefle" [ngClass]="{'d-none': savoirFaireShow === false, 'fade': fade === true, 'd-lg-block': creditsShow === false }"></app-trefle>
+            <app-trefle [ngClass]="{'d-none': savoirFaireShow === false, 'fade': fade === true, 'd-lg-block': creditsShow === false }"></app-trefle>
           </div>
           <div class="col-12 col-lg-3 text-center">
-            <app-carreau id="carreau" [ngClass]="{'d-none': toutSavoirShow === false, 'fade': fade === true, 'd-lg-block': creditsShow === false }"></app-carreau>
+            <app-carreau [ngClass]="{'d-none': toutSavoirShow === false, 'fade': fade === true, 'd-lg-block': creditsShow === false }"></app-carreau>
           </div>
           <div class="col-12 text-center">
-            <app-credits id="credits" [ngClass]="{'d-none': creditsShow === false, 'fade': fade === true }"></app-credits>
+            <app-credits [ngClass]="{'d-none': creditsShow === false, 'fade': fade === true }"></app-credits>
           </div>
       </div>  
 

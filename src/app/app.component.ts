@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Injectable } from '@angular/core';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -20,6 +21,7 @@ export class AppComponent {
   toutSavoirShow: boolean = false;
   creditsShow: boolean = false;
   rotateCredits: any = undefined;
+  cvPopup: any = undefined;
   fade: boolean = false;
 
   constructor() { 
@@ -90,5 +92,10 @@ export class AppComponent {
           this.savoirShow = false;
           this.toutSavoirShow = false;
         }
+    }
+    onPrint() {
+      this.cvPopup = window.open("/assets/CV_2022-09-30_BORIS_ANDERMANN.pdf", "CV", "popup");
+      this.cvPopup.focus();
+      this.cvPopup.print();
     }
 }
